@@ -31,5 +31,30 @@ header {
 }
 
 #banner-links {
-    justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+#navigation {
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+#navigator a {
+  font-size: large;
+  border-right: 2px ridge rgba(255, 255, 255, 0.966);
+  margin: 10px 5px 10px 5px;
+  line-height: 5px;
 }
