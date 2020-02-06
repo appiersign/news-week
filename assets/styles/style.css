@@ -1,3 +1,35 @@
 body {
-    background-color: #F4F5F6;
+  background-color: #f4f5f6;
+}
+
+header {
+  height: 150px;
+}
+
+#banner {
+  background-color: #ef4e17;
+  align-items: flex-end;
+  height: 95px;
+}
+
+#main-logo {
+  color: white;
+  text-decoration: none;
+}
+
+#main-logo svg {
+  fill: white;
+  height: 60px;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.no-text-decoration:hover {
+  text-decoration: none;
+}
+
+#banner-links {
+    justify-content: flex-end;
 }
