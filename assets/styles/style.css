@@ -4,6 +4,7 @@ body {
 
 header {
   height: 150px;
+  margin-bottom: 3px;
 }
 
 #banner {
@@ -53,8 +54,41 @@ header {
 }
 
 #navigator a {
-  font-size: large;
+  font-size: medium;
   border-right: 2px ridge rgba(255, 255, 255, 0.966);
   margin: 10px 5px 10px 5px;
   line-height: 5px;
+}
+
+main {
+  min-height: 500px;
+}
+
+
+.section-header-1 {
+  font-size: 1.0em;
+  color: #A0A0A0;
+  font-weight: 600;
+}
+
+article h2 {
+  font-size: 1em;
+  font-weight: 900;
+}
+
+article div {
+  position: relative;
+}
+
+article h4 {
+  font-size: medium;
+  position: absolute;
+  top: 170px;
+  background-color: white;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
+article p {
+  font-size: 0.8em;
 }
