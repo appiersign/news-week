@@ -89,6 +89,10 @@ article h4 {
   opacity: 0.8;
 }
 
+article a:hover {
+  text-decoration-color: red;
+}
+
 article p {
   font-size: 0.8em;
 }
