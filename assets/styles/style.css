@@ -83,16 +83,36 @@ article div {
 article h4 {
   font-size: medium;
   position: absolute;
-  top: 165px;
+  top: 89%;
   background-color: white;
   font-weight: 800;
   opacity: 0.8;
 }
 
-article a:hover {
+article > div > a:hover {
   text-decoration-color: red;
 }
 
 article p {
   font-size: 0.8em;
+}
+
+article span {
+  background-color: #c2d4d7;
+  font-size: smaller;
+}
+
+article > div > div > a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.bg-gray {
+  background-color: #F4F5F7;
+}
+
+.lighter-header {
+  font-size: 1.4em;
+  font-weight: 500;
 }
