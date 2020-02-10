@@ -181,5 +181,31 @@ aside article {
 }
 
 .sub-headers {
-  font: bold 19px/19px "Roboto Condensed",sans-serif;
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
+}
+
+.mag-img {
+  width: 466px;
+  height: 311px;
+}
+
+.sub-red-tags {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.sub-white-tags {
+  padding: 0 7px;
+  color: black;
+  margin-right: 7px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.main-headers {
+  font-size: 1.5em;
+  line-height: 22px;
+  font-family: "Roboto Condensed", sans-serif;
 }
