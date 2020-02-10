@@ -117,3 +117,7 @@ article > div > div > a:hover {
   font-size: 1.2em;
   font-weight: 500;
 }
+
+.avatar {
+  border-radius: 100%;
+}
