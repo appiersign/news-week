@@ -179,3 +179,7 @@ aside article {
 #issue-footer:hover {
   background-color: #dbdcdd;
 }
+
+.sub-headers {
+  font: bold 19px/19px "Roboto Condensed",sans-serif;
+}
