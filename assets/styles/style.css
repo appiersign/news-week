@@ -137,3 +137,7 @@ article > div > div > a:hover {
   color: #ef4e17 !important;
   text-decoration: none;
 }
+
+aside article {
+  min-height: 84px;
+}
