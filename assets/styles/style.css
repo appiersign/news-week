@@ -67,7 +67,7 @@ main {
 
 .section-header-1 {
   font-size: 1.0em;
-  color: #A0A0A0;
+  color: #a0a0a0;
   font-weight: 600;
 }
 
@@ -110,7 +110,7 @@ article > div > div > a:hover {
 }
 
 .bg-gray {
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
 
 .lighter-header {
