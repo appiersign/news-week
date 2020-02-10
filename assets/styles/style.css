@@ -121,3 +121,8 @@ article > div > div > a:hover {
 .avatar {
   border-radius: 100%;
 }
+
+.aside-author {
+  font-size: small;
+  font-family: 'Roboto Condensed', sans-serif;
+}
