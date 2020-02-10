@@ -141,3 +141,8 @@ article > div > div > a:hover {
 aside article {
   min-height: 84px;
 }
+
+.latest-news-thumbnail {
+  height: 90.11px;
+  width: 135px;
+}
