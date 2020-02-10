@@ -64,9 +64,8 @@ main {
   min-height: 500px;
 }
 
-
 .section-header-1 {
-  font-size: 1.0em;
+  font-size: 1em;
   color: #a0a0a0;
   font-weight: 600;
 }
@@ -97,7 +96,7 @@ article p {
   font-size: 0.8em;
 }
 
-article  > div > div a {
+article > div > div a {
   color: black;
   background-color: #c2d4d7;
   font-size: smaller;
@@ -124,7 +123,7 @@ article > div > div > a:hover {
 
 .aside-author {
   font-size: small;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   color: #837f6b;
 }
@@ -145,4 +144,38 @@ aside article {
 .latest-news-thumbnail {
   height: 90.11px;
   width: 135px;
+}
+
+.latest-news-card-header {
+  font-size: 1.9em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.body-text {
+  font-size: small;
+}
+
+.issue-cover {
+  position: relative;
+}
+
+.issue-cover > span {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #f72210;
+  padding: 0 10px;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+
+#issue-footer {
+  background-color: #f4f5f6;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#issue-footer:hover {
+  background-color: #dbdcdd;
 }
