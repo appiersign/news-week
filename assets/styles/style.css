@@ -125,4 +125,5 @@ article > div > div > a:hover {
 .aside-author {
   font-size: small;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
 }
