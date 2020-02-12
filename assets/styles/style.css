@@ -125,9 +125,10 @@ article div {
 }
 
 article h4 {
+  padding: 10px;
   font-size: medium;
   position: absolute;
-  top: 89%;
+  bottom: -10px;
   background-color: white;
   font-weight: 800;
   opacity: 0.8;
