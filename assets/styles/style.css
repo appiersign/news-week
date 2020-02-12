@@ -13,6 +13,51 @@ header {
   height: 95px;
 }
 
+#second-nav {
+  display: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 40px;
+  }
+  #banner {
+    display: none !important;
+  }
+
+  #main-nav {
+    display: none !important;
+  }
+
+  #second-nav {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-style-none {
+    list-style: none;
+  }
+
+  #second-nav > div:nth-child(2) > ul {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #copyright {
+    flex-direction: column;
+  }
+
+  #social-links {
+    float: left !important;
+  }
+}
+
 #main-logo {
   color: white;
   text-decoration: none;
