@@ -1,5 +1,5 @@
 # The News Week Clone
-![Preview](https://ibb.co/cyLNzh2)
+![Preview](https://drive.google.com/open?id=1k4_V_aGEIPihcdeRLZcEgdxTGX2t6osB)
 
 > The purpose of this project is to learn about media queries and responsive design and bootstrap.
 
