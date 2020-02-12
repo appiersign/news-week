@@ -108,7 +108,8 @@ header {
 }
 
 #navigator a {
-  font-size: medium;
+  white-space: nowrap;
+  font-size: small;
   border-right: 2px ridge rgba(255, 255, 255, 0.966);
   margin: 10px 5px 10px 5px;
   line-height: 5px;
