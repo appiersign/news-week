@@ -209,3 +209,20 @@ aside article {
   line-height: 22px;
   font-family: "Roboto Condensed", sans-serif;
 }
+
+#subscribe-container {
+  height: 300px;
+}
+
+#subscribe-magazines {
+  position: relative;
+}
+
+#subscribe-magazines > div {
+  position: absolute;
+}
+
+#subscribe-magazines > div:nth-child(2) {
+  top: 10px;
+  left: 95px;
+}
