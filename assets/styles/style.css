@@ -21,6 +21,15 @@ header {
   white-space: nowrap;
 }
 
+footer a > svg {
+  display: block;
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  fill: #f72210;
+}
+
 #second-nav svg {
   fill: white;
   height: 25px;
@@ -30,6 +39,7 @@ header {
   header {
     height: 40px;
   }
+
   #banner {
     display: none !important;
   }
@@ -51,6 +61,40 @@ header {
   #second-nav > div:nth-child(2) > ul {
     justify-content: flex-end;
   }
+}
+
+.footer-links > li {
+  list-style: none;
+  display: inline;
+  border-right: 1px #a0a0a0 solid;
+  padding-right: 10px;
+  margin-right: 10px;
+  font-size: small;
+}
+
+article > div > div a {
+  color: black;
+  background-color: #c2d4d7;
+  font-size: smaller;
+}
+
+.footer-links > li a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+article > div > a:hover {
+  text-decoration-color: red;
+}
+
+article > div > div > a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.footer-links > li a:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 425px) {
@@ -148,24 +192,8 @@ article h4 {
   opacity: 0.8;
 }
 
-article > div > a:hover {
-  text-decoration-color: red;
-}
-
 article p {
   font-size: 0.8em;
-}
-
-article > div > div a {
-  color: black;
-  background-color: #c2d4d7;
-  font-size: smaller;
-}
-
-article > div > div > a:hover {
-  text-decoration: none;
-  background-color: black;
-  color: white;
 }
 
 .bg-gray {
@@ -279,10 +307,6 @@ aside article {
 }
 
 #subscribe-magazines > div {
-  position: relative;
-}
-
-#subscribe-magazines > div {
   position: absolute;
 }
 
@@ -319,8 +343,7 @@ aside article {
 }
 
 #newsletter-container > div:nth-child(1) {
-  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5")
-    center center / cover no-repeat;
+  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
   min-height: 290px;
 }
 
@@ -344,37 +367,10 @@ footer {
   background-color: white;
 }
 
-footer a > svg {
-  display: block;
-  width: 236px;
-  height: 36px;
-  margin-right: 15px;
-  margin-bottom: 12px;
-  fill: #f72210;
-}
-
 #copyright {
   align-items: flex-end;
 }
 
 #copyright > span {
   margin-bottom: 10px;
-}
-
-.footer-links > li {
-  list-style: none;
-  display: inline;
-  border-right: 1px #a0a0a0 solid;
-  padding-right: 10px;
-  margin-right: 10px;
-  font-size: small;
-}
-
-.footer-links > li a {
-  color: #a0a0a0;
-  text-decoration: none;
-}
-
-.footer-links > li a:hover {
-  color: black;
 }
