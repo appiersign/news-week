@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Week Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <header class="col-12 col-xl-8 offset-xl-2">
+        <div id="banner" class="row pt-4 d-flex pb-5">
+            <div class="col-md-3 text-white">
+                Thu, Feb 06, 2020
+            </div>
+            <div class="col-md-6 text-center">
+                <a id="main-logo" href="#">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                        style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                        <g>
+                            <path class="st0"
+                                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div id="banner-links" class="col-md-3 d-flex">
+                <a href="#" class="text-white py-1 px-2 no-text-decoration"><b>SIGNIN</b></a>
+                <a href="#" class="bg-white py-1 px-2 text-danger no-text-decoration"><b class="pr-2 w-100">SUBSCRIBE ></b>
+                </a>
+            </div>
+        </div>
+        <nav id="main-nav" class="row navbar navbar-expand-lg navbar-light bg-white pl-10">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div id="navigator" class="navbar-nav no-padding custom-font">
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">U.S.</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">World</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Business</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Tech & Science</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Culture</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Newsgeek</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Sports</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Health</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">The Debate</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Vantage</a>
+                    <a class="nav-item nav-link text-dark font-weight-900" href="#">Weather</a>
+                    <form action="./index.html" class="mt-2"><input type="text" placeholder="search"></form>
+                </div>
+            </div>
+        </nav>
+        <nav id="second-nav" class="row bg-danger py-2">
+            <div class="col-6">
+                <a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+                    <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+                    </g></svg></a>
+            </div>
+            <div class="col-6">
+                <ul class="d-flex custom-font">
+                    <li class="list-style-none mr-1"><a href="#" class="text-white nowrap">SIGN IN</a></li>
+                    <li class="list-style-none mr-1"><a href="#" class="py-1 px-1 bg-white text-danger nowrap" >SUBSCRIBE ></a></li>
+                    <li class="list-style-none mr-1"><a href="#"><i class="fas fa-bars text-white"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="col-12 col-xl-8 offset-xl-2 bg-white p-4">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <section class="row">
+                    <h1 class="container section-header-1">FEATURED STORIES</h1>
+                    <article class="container">
+                        <div class="mb-2">
+                            <img class="w-100"
+                                src="https://d.newsweek.com/en/full/1565530/navy-medicine-san-diego.jpg?w=397&h=265&q=90&f=afae2495b0ce079daabc87a0bf3ca10b"
+                                alt="navy Medicine san diego">
+                            <h4 class="text-danger p-2">U.S</h4>
+                        </div>
+
+                        <h2>Navy Service Members and Family Rarely Treated After Blood Tests</h2>
+                        <p>Between 2012 and 2017 Navy Medicine identified patients who had a positive fecal occult blood
+                            test but never received documentation of a "result and next steps."</p>
+                    </article>
+
+                    <article class="container">
+                        <div class="mb-2">
+                            <img class="w-100"
+                                src="https://d.newsweek.com/en/full/1565542/donald-trump-impeachment-senate-acquittal-speech-clinton.jpg?w=397&h=265&q=90&f=75d4d3d91feeae981415c7338cf26b67"
+                                alt="navy Medicine san diego">
+                            <h4 class="text-danger p-2">U.S</h4>
+                        </div>
+
+                        <h2>Compare Trump's Speech About Senate Impeachment Acquittal to Clinton's</h2>
+                        <p>President Donald Trump's speech came more than 20 years after President Bill Clinton's and
+                            focused on praising his supporters and lambasting his opponents.</p>
+                    </article>
+
+                    <article class="container">
+                        <div class="mb-2">
+                            <img class="w-100"
+                                src="https://d.newsweek.com/en/full/1565742/julian-assange.jpg?w=397&h=265&q=90&f=5c79d12ef60b7a896da7d5da9243226a"
+                                alt="navy Medicine san diego">
+                            <h4 class="text-danger p-2">NEWS</h4>
+                        </div>
+
+                        <h2>U.N. Torture Expert 'Genuinely Outraged' by Julian Assange Extradition Case</h2>
+                        <p>"If you are going to put somebody in jail for the rest of his life for publishing diplomatic
+                            cables...that is an attack on all journalists," one panelist said at a talk in London this
+                            week.</p>
+                    </article>
+                    <article class="container">
+                        <div class="mb-2">
+                            <img class="w-100"
+                                src="https://d.newsweek.com/en/full/1565514/nra.jpg?w=397&h=265&q=90&f=4e7a05e4eee84859b2aed354f9680de3"
+                                alt="navy Medicine san diego">
+                            <h4 class="text-danger p-2">NEWS</h4>
+                        </div>
+
+                        <h2>Probe of NRA Finances Could Put Gun-Rights Group's Nonprofit Status at Risk</h2>
+                        <p>The report follows a year of public revelations about the NRA's spending habits that have led
+                            to questions about its viability as a non-profit.</p>
+                    </article>
+                    <div class="mb-4 container">
+                        <article class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1559216/tokyo-my-city-chizu-nakamoto.jpg?w=343&h=229&f=9001796ad87af5440a19c713ba2fc017"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary p-2">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2>Female Entrepreneur Active in Tokyo and Uganda</h2>
+                                </a>
+                                <p>APT Women aims to foster and educate fledgling global business leaders like Chizu
+                                    Nakamoto.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="mb-4 container">
+                        <article class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1551968/university-texas-el-paso.jpg?w=343&h=229&f=27929f494a86f92777e982d66aa045fe"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary p-2">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2>Nurses - The Real Medical Heroes of 2020</h2>
+                                </a>
+                                <p>We’re used to doctors bustling in and out when in hospital, but it’s the reassuring
+                                    presence and professionalism of the nursing staff that we rely on. What sets the
+                                    best ones apart?</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="mb-4 container">
+                        <article class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1563523/meet-adam-lambert-new-york-city.png?w=343&h=229&f=5650ee55eada1c2dbd4be78a28f9d8d0"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary p-2">NYC</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2>Meet Adam Lambert in New York City!</h2>
+                                </a>
+                                <p>Enter the sweepstake for your chance to meet music sensation Adam Lambert and attend
+                                    the live taping of his appearance on Newsweek Conversations.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="mb-4 container">
+                        <article class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1553168/schochor-federico-staton-p-v3.jpg?w=343&h=229&f=2bd19015270a9fff6d018cccde9def55"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary p-2">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2>If You or a Loved One Has Been Injured, Who Can Champion Your Cause?</h2>
+                                </a>
+                                <p>Logic dictates that when you need a good personal injury attorney, you’re going to be
+                                    in a stressful, vulnerable and overwhelming situation. It is vital that you speak to
+                                    an attorney who can ensure that you are not taken advantage of. We look at some of
+                                    the leaders in the field.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container mb-4">
+                        <article class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1562518/teach-now-2.jpg?w=343&h=229&f=49b15e13ed47a3d450013239f0af77cf"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary p-2">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2>Embark on a Career in Teaching With a Leading School</h2>
+                                </a>
+                                <p>Teachers are more in demand than ever, and the rewards for a career as an educator
+                                    are numerous and generous. Find out how to get involved.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container mb-4">
+                        <article class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1564804/nw-kobe-sponsor.jpg?w=343&h=229&f=2bf6ea01c89023be1dac2c9aef3c1412"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary p-2">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2>Newsweek Kobe Commemorative Edition</h2>
+                                </a>
+                                <p>Kobe Bryant will forever remain in the hearts of basketball fans as one of the
+                                    greatest to ever play the sport. Celebrate his life with the Newsweek Commemorative
+                                    Edition, featuring photos and stories of the Black Mamba’s incredible legacy both on
+                                    and off the court.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <section class="row">
+                    <h1 class="container section-header-1">TOP STORIES</h1>
+                    <div class="mb-4">
+                        <article class="container">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1565404/russia-us-military-coronavirus-disinformation.jpg?w=591&h=364&f=762667ef7fcbc6fef46abb85561fb1ac"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-danger p-2">U.S.</h4>
+                            </div>
+                            <div class="py-2">
+                                <a href="#" class="text-dark">
+                                    <h2>Military Tracking Russia News Outlets for Coronavirus Disinformation</h2>
+                                </a>
+                                <p>Military planners are actively tracking disinformation campaigns promulgated by
+                                    accounts operated by—or attributable to—the Russian government.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="row bg-gray pt-2 mb-4">
+                    <h1 class="container section-header-1">CULTURE & TRAVEL</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-4">
+                                <article class="">
+                                    <div class="mb-2">
+                                        <a href="#"><img class="w-100"
+                                                src="https://d.newsweek.com/en/full/1564962/cul-map-undergroundsubways-09-91029419.jpg?w=397&h=265&f=c75ea7fe40bca26ffbb19f21fccf1054"
+                                                alt="navy Medicine san diego"></a>
+                                        <h4 class="text-danger p-2">U.S.</h4>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="#" class="text-dark">
+                                            <h2 class="lighter-header">Subway Stations That Will Stop You in Your Tracks
+                                            </h2>
+                                        </a>
+                                        <p>From space-age designs to murals, artists and architects have transformed
+                                            these 10 stunning stations around the world into contemplative and artistic
+                                            spaces.</p>
+                                        <div>
+                                            <a href="#" class="p-1">Achitecture</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-4">
+                                <article class="">
+                                    <div class="mb-2">
+                                        <a href="#"><img class="w-100"
+                                                src="https://d.newsweek.com/en/full/1565011/koffee-reggae-singer.jpg?w=397&h=265&f=84976fc68c362f53a02453d07063e9d0"
+                                                alt="navy Medicine san diego"></a>
+                                        <h4 class="text-danger p-2">U.S.</h4>
+                                    </div>
+                                    <div class="py-2">
+                                        <a href="#" class="text-dark">
+                                            <h2 class="lighter-header">Rising Teen Star Koffee Gives Reggae a Jolt to
+                                                the Mainstream
+                                            </h2>
+                                        </a>
+                                        <p>Though Jamaican artists have been pigeon-holed or marginalized, they're
+                                            finally taking off stateside. Meet Koffee, the first female artist to take
+                                            home the Grammy for best reggae album—at 19 years old.</p>
+                                        <div>
+                                            <a href="#" class="p-1">Music</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-4">
+                                <article class="">
+                                    <div class="mb-2">
+                                        <a href="#"><img class="w-100"
+                                                src="https://d.newsweek.com/en/full/1565365/superman-oscar.jpg?w=397&h=265&f=8f7f0442997e9bfd5ff72d199ac16d2c"
+                                                alt="navy Medicine san diego"></a>
+                                        <h4 class="text-danger p-2">U.S.</h4>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="#" class="text-dark">
+                                            <h2 class="lighter-header">Comic Book Movies Now Earn Oscars Respect—Their
+                                                Journey to Relevancy
+                                            </h2>
+                                        </a>
+                                        <p>Comic book movies have not had much of a presence at award shows. Over time,
+                                            only a handful of films have gotten a nomination, but "Joker" has gotten a
+                                            record number of nominations.</p>
+                                        <div>
+                                            <a href="#" class="p-1">Oscars</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-4">
+                                <article class="">
+                                    <div class="mb-2">
+                                        <a href="#"><img class="w-100"
+                                                src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d"
+                                                alt="navy Medicine san diego"></a>
+                                        <h4 class="text-danger p-2">U.S.</h4>
+                                    </div>
+                                    <div class="py-2">
+                                        <a href="#" class="text-dark">
+                                            <h2 class="lighter-header">High-Stakes Holidays That Cater to Thrill Seekers
+                                            </h2>
+                                        </a>
+                                        <p>Looking to up the ante on your next adventure? Here are some extreme
+                                            vacations that will stimulate thrill seekers cerebral and physical
+                                            predilections for danger, risk and fantasy.</p>
+                                        <div>
+                                            <a href="#" class="p-1">Travel</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="row">
+                    <h1 class="col-12 section-header-1 no-padding">MORE STORIES</h1>
+                    <div class="col-12 no-padding">
+                        <hr>
+                    </div>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566094/vladimir-putin-barack-obama-sergei-lavrov-trump.jpg?w=135&h=90&f=d893fdf0e4677539d11a9cad841fa28a"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says
+                                </h2>
+                            </a>
+                        </div>
+                        <p>
+                            Sergei Lavrov accused President Barack Obama of putting personal issues before those of the
+                            state and undermining ties between Washington and Moscow.
+                        </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566083/beijing-china-coronavirus.jpg?w=135&h=90&f=faa29adcbc1b976a19df5ab7fd0278c7"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Coronavirus Could Be Airborne, Chinese Official Claims
+                                </h2>
+                            </a>
+                        </div>
+                        <p>The deadly 2019-nCoV virus has spread to over 25 countries and territories. </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566089/dnc-chair-tom-perez-los-angeles.jpg?w=135&h=90&f=1cff0cd1fa8f6e92ed6d707aec448d40"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Former Iowa Congressman Refers to Tom Perez as 'Pontius Pilate' Amid Caucus 'Mess'
+                                </h2>
+                            </a>
+                        </div>
+                        <p>
+                            Dave Nagle pinned blame for the chaotic caucus on the DNC chairman and said Iowa Democrats
+                            were "bushwhacked by a bad system."
+                        </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566073/mitt-romney-cpac-matt-schlapp-donald-trump.jpg?w=135&h=90&f=04413bf883ee234c84fa0d15cbb255f4"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    CPAC Chairman Says Mitt Romney Would Not Be Safe at Annual Meeting
+                                </h2>
+                            </a>
+                        </div>
+                        <p>
+                            Matt Schlapp said Sunday that the senator of Utah had "lied so continuously to
+                            conservatives" and distanced himself from President Donald Trump.
+                        </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566067/donald-trump.jpg?w=135&h=90&f=1da24be8b9f867110bda5871cf1b1de6"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Team Bloomberg Trolls Trump During Oscars With 'Best Fictional Wall' Award
+                                </h2>
+                            </a>
+                        </div>
+                        <p>Team Bloomberg handed out the "Donalds" awards as Sunday's Oscars night unfolded.</p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566064/diamond-princess-cruise-ship-japan-coronavirus-2019-ncov.jpg?w=135&h=90&f=4071cea176727092a331b18a71bb3b1a"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Around Third of Coronavirus Cases Outside China on Quarantined Cruise Ship
+                                </h2>
+                            </a>
+                        </div>
+                        <p>
+                            The new form of the coronavirus has killed over 910 people since it emerged in China late
+                            last year.
+                        </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566046/afghanistan.png?w=135&h=90&f=c114ce2be5fe8320b16c4415bca48d34"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Military Identifies Special Operation Soldiers Killed in Afghanistan Combat
+                                </h2>
+                            </a>
+                        </div>
+                        <p>
+                            The two officers were part of a group of U.S. personnel from the 3rd Battalion, 7th Special
+                            Forces Group and members of the allied Afghan Special Operations Forces.
+                        </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566009/joe-biden-george-stephanoupoulos-sanders.jpg?w=135&h=90&f=309c2194b5e0ff1c5914a2bb57130d0d"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Biden Says He'd 'Work Like Hell' for Bernie Sanders If He Wins Nomination
+                                </h2>
+                            </a>
+                        </div>
+                        <p>The presidential candidate noted that it's his own campaign that will bring out black voters
+                            and propel him to victory.</p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566000/gregory-timm.png?w=135&h=90&f=09a053295821758da24a45dba539df4e"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Man Plows Van Through Voter Registration Tent Narrowly Missing Volunteers
+                                </h2>
+                            </a>
+                        </div>
+                        <p>
+                            Gregory Timm, 27, was charged with aggravated assault after the incident at the Kernan
+                            Village shopping center in Jacksonville, Florida.
+                        </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566029/nypd-car.jpg?w=135&h=90&f=5b3081489edfe03b7666da3418cd0372"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Two NYPD Officers Shot in Targeted Attacks Within 12 Hours
+                                </h2>
+                            </a>
+                        </div>
+                        <p>
+                            "I want New Yorkers to be clear, this was an attempt to assassinate police officers," Mayor
+                            Bill de Blasio said following the first incident.
+                        </p>
+                        <hr>
+                    </article>
+                    <article class="col-12 no-padding">
+                        <img class="float-left mr-3 mb-3"
+                            src="https://d.newsweek.com/en/full/1566057/janelle-monae-oscars.jpg?w=135&h=90&f=8fc5fa9fd8a8c0d75d15db8cff3260ef"
+                            alt="vladimir-putin-barack-obama">
+                        <div>
+                            <a href="#" class="text-dark">
+                                <h2>
+                                    Janelle Monae Channels Mr. Rogers, Calls Out Lack of Diversity at Oscars
+                                </h2>
+                            </a>
+                        </div>
+                        <p>The Oscars 2020 opened with Janelle Monae performing a song featuring references to the lack
+                            of black actors and female directors nominated by the Academy.</p>
+                        <hr>
+                    </article>
+                </section>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <aside class="row pl-4">
+                    <h1 class="container section-header-1">OPINIONS</h1>
+                    <article class="col-11 no-padding">
+                        <img class="float-left mr-3 avatar"
+                            src="https://d.newsweek.com/en/full/1566038/benny-johnson.jpg?w=63&h=63&f=0ddbb947c290dd32e615e08bfbea62a0"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</h2>
+                        </a>
+                        <h3 class="aside-author">
+                            BY BENNY JOHNSON
+                        </h3>
+                        <div class="clearfix"></div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <img class="float-left mr-3 avatar"
+                            src="https://d.newsweek.com/en/full/1565843/jennifer-n-victor.png?w=63&h=63&f=1470faae30a4533bfdac3f32c8aa9f4d"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Why Impeachment Doesn't Work</h2>
+                        </a>
+                        <h3 class="aside-author">
+                            BY JENNIFER N. VICTOR
+                        </h3>
+                        <div class="clearfix"></div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <img class="float-left mr-3 avatar"
+                            src="https://d.newsweek.com/en/full/1565695/seth-maskett.png?w=63&h=63&f=a42402a05f14afe42628bff8d529746f"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Iowa's Messy Results Offer Fascinating Clues About the Race Ahead</h2>
+                        </a>
+                        <h3 class="aside-author">
+                            BY SETH MASKET
+                        </h3>
+                        <div class="clearfix"></div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <img class="float-left mr-3 avatar"
+                            src="https://d.newsweek.com/en/full/1508047/heather-thompson-day.png?w=63&h=63&f=e6cf73755fc913072f258274fe9ee2d4"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Mitt Romney Might Be a Leader Without a Party. But He Is a Leader Still</h2>
+                        </a>
+                        <h3 class="aside-author">
+                            BY HEATHER THOMPSON DAY
+                        </h3>
+                        <div class="clearfix"></div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <img class="float-left mr-3 avatar"
+                            src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>The Oscar for Lying Goes To...</h2>
+                        </a>
+                        <h3 class="aside-author">
+                            BY TOM ROGERS
+                        </h3>
+                        <div class="clearfix"></div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <img class="float-left mr-3 avatar"
+                            src="https://d.newsweek.com/en/full/1565815/sophie-richardson.png?w=63&h=63&f=e74a0e19c6ad849ab0c53dbc2d7be8da"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Mass Detentions of Chinese Muslims Likely to Worsen Coronavirus Scare</h2>
+                        </a>
+                        <h3 class="aside-author">
+                            BY SOPHIE RICHARDSON
+                        </h3>
+                        <div class="clearfix"></div>
+                        <hr>
+                    </article>
+
+                    <h1 class="container section-header-1 mt-4">LATEST NEWS</h1>
+                    <article class="col-11 no-padding">
+                        <div>
+                            <img class="float-left mr-3 latest-news-thumbnail"
+                                src="https://d.newsweek.com/en/full/1566099/police-tape.jpg?w=397&h=265&f=02d4838e06b0b79df05a10f0090afe4a"
+                                alt="vladimir-putin-barack-obama">
+                            <a href="#" class="hover-red">
+                                <h2>Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</h2>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <div>
+                            <img class="float-left mr-3 latest-news-thumbnail"
+                                src="https://d.newsweek.com/en/full/1566086/kirkwood-ski-resort.jpg?w=397&h=265&f=f7b1b5452a04ecc32ab5a0106628298e"
+                                alt="vladimir-putin-barack-obama">
+                            <a href="#" class="hover-red">
+                                <h2>209-MPH Wind Gust Measured at California Peak Could Be a Record-Breaker</h2>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <div>
+                            <img class="float-left mr-3 latest-news-thumbnail"
+                                src="https://d.newsweek.com/en/full/1566142/gayle-king.jpg?w=397&h=265&f=2025748d1bff61fbed6181aee7a61af3"
+                                alt="vladimir-putin-barack-obama">
+                            <a href="#" class="hover-red">
+                                <h2>#IStandWithGayle Trends After Gayle King Receives Death Threats</h2>
+                                <br>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <div>
+                            <img class="float-left mr-3 latest-news-thumbnail"
+                                src="https://d.newsweek.com/en/full/1533708/power-season-6-episode-7-recap.jpg?w=397&h=265&l=60&t=34&f=aa229bfc6d4a1a19291436f372e7772e"
+                                alt="vladimir-putin-barack-obama">
+                            <a href="#" class="hover-red">
+                                <h2>'Power' Spin-Off: Every Character Who Could Return in 'Power Book II Ghost'</h2>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <div>
+                            <img class="float-left mr-3 latest-news-thumbnail"
+                                src="https://d.newsweek.com/en/full/1566120/richard-burt-new-start-donald-trump-russia.jpg?w=397&h=265&f=6343928d165acbac4003d115f79e2a5d"
+                                alt="vladimir-putin-barack-obama">
+                            <a href="#" class="hover-red">
+                                <h2>Trump Risks 'Nuclear Blackmail' Unless He Extends Russia New START Deal</h2>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <div>
+                            <img class="float-left mr-3 latest-news-thumbnail"
+                                src="https://d.newsweek.com/en/full/1566132/backstreet-boys.jpg?w=397&h=265&f=5bb2d06774b0e16523f17444523d88af"
+                                alt="vladimir-putin-barack-obama">
+                            <a href="#" class="hover-red">
+                                <h2>Backstreet Boys DNA Tour 2020: How to Buy Tickets, Concert Dates, Locations</h2>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                    </article>
+                    <article class="col-11 no-padding">
+                        <div class="mb-3">
+                            <img class="float-left mr-3 latest-news-thumbnail"
+                                src="https://d.newsweek.com/en/full/1566111/conservative-tv-host-criticizes-oscars-awarding-bong-joon-ho.jpg?w=397&h=265&f=dc6e19ba2a2b627c41e4b76016063420"
+                                alt="vladimir-putin-barack-obama">
+                            <a href="#" class="hover-red">
+                                <h2>Conservative TV Host Criticizes Oscars For Awarding Bong Joon Ho</h2>
+
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 offset-md-3 col-lg-12 offset-lg-0 mb-4">
+                        <div class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1561558/saudi-picture.jpg?w=343&h=229&f=c38d1701b1898e7dcc79c2e2dc3aef4a"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2 class="latest-news-card-header">Saudi Arabia Accelerates Ahead</h2>
+                                </a>
+                                <p class="body-text">With interest from international investors up 70 percent in 2019,
+                                    Saudi Arabia is becoming an investment powerhouse—a transformation supported by its
+                                    flourishing financial services industry and rapidly expanding private sector. Read
+                                    more.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 offset-md-3 col-lg-12 offset-lg-0 mb-4">
+                        <div class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1556481/university-denver-sturm-college-law.jpg?w=343&h=229&f=03c5bc9900a26a2cb6d96e617348a138"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2 class="latest-news-card-header">Have You Thought About A Career In Law? If So,
+                                        Where Should You Get Qualified?</h2>
+                                </a>
+                                <p class="body-text">The rewards for a career in the legal profession are many and
+                                    varied, and demand for lawyers is high. So which schools produce the best lawyers?
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 offset-md-3 col-lg-12 offset-lg-0 mb-4">
+                        <div class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1551987/hubbard-school-journalism-mass-communication.jpg?w=343&h=229&f=b588b3c79d85cc0c8e4829c41c46cd11"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2 class="latest-news-card-header">Good Journalists Are More Important Than Ever in
+                                        2020</h2>
+                                </a>
+                                <p class="body-text">The world desperately needs sharp, incisive and capable journalists
+                                    to cut through the noise with measured and nuanced takes on today's pressing issues.
+                                    For these looking to find their voices, an education at a leading journalism school
+                                    is invaluable.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 offset-md-3 col-lg-12 offset-lg-0 mb-4">
+                        <div class="card">
+                            <div class="mb-2">
+                                <a href="#"><img class="w-100"
+                                        src="https://d.newsweek.com/en/full/1561558/saudi-picture.jpg?w=343&h=229&f=c38d1701b1898e7dcc79c2e2dc3aef4a"
+                                        alt="navy Medicine san diego"></a>
+                                <h4 class="text-primary">SPONSORED INSIGHT</h4>
+                            </div>
+                            <div class="py-2 px-3">
+                                <a href="#" class="text-dark">
+                                    <h2 class="latest-news-card-header">Saudi Arabia Accelerates Ahead</h2>
+                                </a>
+                                <p class="body-text">With interest from international investors up 70 percent in 2019,
+                                    Saudi Arabia is becoming an investment powerhouse—a transformation supported by its
+                                    flourishing financial services industry and rapidly expanding private sector. Read
+                                    more.</p>
+                            </div>
+                        </div>
+                    </article>
+                </aside>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mt-md-5">
+                <article class="row">
+                    <div class="issue-cover container-fluid no-padding">
+                        <img src="https://d.newsweek.com/en/full/1564924/february-14-2020-cover.jpg?w=360&h=480&q=90&f=84332ff90c54a852c793caa7514ef923"
+                            alt="cover" class="w-100">
+                        <span>FEBRUARY 14 ISSUE</span>
+                    </div>
+                    <a href="#" id="issue-footer" class="container-fluid text-center py-2">
+                        SEE ALL FEATURES >
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-9 mt-4">
+                <div class="row">
+                    <div class="container-fluid text-center">
+                        <i class="fab fa-neos bg-danger p-2 text-white"></i> <span class="sub-headers">IN THE
+                            MAGAZINE</span>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <article class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1564635/fe-coronavirus-01-1197308539.jpg?w=466&h=311&l=46&t=49&q=90&f=cb04ebc5708611be1a14287527a250cc"
+                            alt="coronavirus" class="w-100 mb-2 mag-img">
+                        <span class="sub-red-tags">COVER</span> <span class="sub-white-tags">WORLD</span>
+                        <h2>Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</h2>
+                    </article>
+                    <article class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1564166/fea-wargames-01.jpg?w=466&h=311&l=48&t=56&q=90&f=e57f9517cbe6598355a8ac5e07efba4b"
+                            alt="coronavirus" class="w-100 mb-2 mag-img">
+                        <span class="sub-red-tags">FEATURES</span> <span class="sub-white-tags">WORLD</span>
+                        <h2>Exclusive: While Everyone Focuses On Iran, US Military Prepares For Russia</h2>
+                    </article>
+                    <article class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1564921/per-kobe-banner.jpg?w=466&h=311&l=50&t=45&q=90&f=d7e201a79ca3f3831bc2967ee5e20d4e"
+                            alt="coronavirus" class="w-100 mb-2 mag-img">
+                        <span class="sub-red-tags">PERISCOPE</span> <span class="sub-white-tags">SPORTS</span>
+                        <h2>Kobe Bryant On Parenting, Taylor Swift And Life After Basketball</h2>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <article class="col-md-3">
+                <img src="https://d.newsweek.com/en/full/1563948/united.jpg?w=466&h=311&q=90&f=b080d82c464d309edc702183a4f7a9b3"
+                    alt="coronavirus" class="w-100 mb-2 mag-img">
+                <span class="sub-red-tags">PERISCOPE</span> <span class="sub-white-tags">CULTURE</span>
+                <h2>The Top Three Airlines Used for ICE Deportations to Central America in 2019</h2>
+            </article>
+            <article class="col-md-3">
+                <img src="https://d.newsweek.com/en/full/1564968/cul-map-undergroundsubways-06-157155767.jpg?w=466&h=311&q=90&f=2c933e956b10e641fbf4b620a119c19d"
+                    alt="coronavirus" class="w-100 mb-2 mag-img">
+                <span class="sub-red-tags">DOWNTIME</span> <span class="sub-white-tags">CULTURE</span>
+                <h2>Subway Stations That Will Stop You in Your Tracks</h2>
+            </article>
+            <article class="col-md-3">
+                <img src="https://d.newsweek.com/en/full/1564972/cul-ps-stephaniebeatriz-banner.jpg?w=466&h=311&q=90&f=b0f35797e644d2b2e79afd015cb9494f"
+                    alt="coronavirus" class="w-100 mb-2 mag-img">
+                <span class="sub-red-tags">DOWNTIME</span> <span class="sub-white-tags">CULTURE</span>
+                <h2>Brooklyn Nine-Nine's Stephanie Beatriz Talks Being Bisexual and Latinx on Network TV</h2>
+            </article>
+            <article class="col-md-3">
+                <img src="https://d.newsweek.com/en/full/1564635/fe-coronavirus-01-1197308539.jpg?w=466&h=311&l=46&t=49&q=90&f=cb04ebc5708611be1a14287527a250cc"
+                    alt="coronavirus" class="w-100 mb-2 mag-img">
+                <span class="sub-red-tags">COVER</span> <span class="sub-white-tags">WORLD</span>
+                <h2>FIRST TIMER</h2>
+            </article>
+        </div>
+        <div class="row mt-3">
+            <div class="container-fluid text-center">
+                <i class="fab fa-neos bg-danger p-2 text-white"></i> <span class="sub-headers">EDITOR'S PICK</span>
+                <hr>
+            </div>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566044/bernie-sanders.jpg?w=397&h=295&f=a97d1aa9be73e32fdd4f7072c871acfa"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">U.S</h4>
+                </div>
+
+                <h2>Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</h2>
+                <p>"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic
+                    about Bernie Sanders," the presidential candidate said.</p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566006/oscar-statuette.jpg?w=397&h=295&f=ae547e546eb76a9fc25a118f01879dbd"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">U.S</h4>
+                </div>
+
+                <h2>Goody Bag for Oscars 2020 Nominees Includes 12-Day Cruise and More</h2>
+                <p>This year's "Everyone Wins" gift bag, courtesy of Los Angeles-based niche marketing firm Distinctive
+                    Assets, is worth around $225,000.</p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566011/tawny-nurse-shark-grazes-surface-talbot-bay.jpg?w=397&h=295&f=64c462b5aa7947042e3a70f27ca8a812"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">TECH & SCIENCE</h4>
+                </div>
+
+                <h2>Tawny Sharks Spotted 'Dancing' as They Wait for Dinner</h2>
+                <p>Footage shows 20 sharks as they wait for pipis to emerge from the sea on Torres Strait beach on Mer
+                    Island, Australia.</p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566052/brad-pitt.jpg?w=397&h=295&f=ae1d0bb33114483d4279b52c666ce8cf"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">U.S</h4>
+                </div>
+
+                <h2>Brad Pitt Says His 45-Second Oscar Speech Is 'More' Than John Bolton Got</h2>
+                <p>"They told me I only had 45 seconds, and that's 45 seconds more than the Senate gave John Bolton this
+                    week," Pitt said while giving his speech for winning best supporting actor.</p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565967/donald-trump.jpg?w=397&h=295&f=efe6c2c6fbc32584e7656b3d0b0370c3"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">POLITICS</h4>
+                </div>
+
+                <h2>New York Republican Legislator Switches to the Democratic Party</h2>
+                <p>"I'm not trying to demonize Republicans. I'm just saying I feel more comfortable at the moment with
+                    the Democratic Party," David Tubiolo said.</p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">WORLD</h4>
+                </div>
+
+                <h2>U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+                <p>Two U.S. and nine Afghan special operations forces soldiers are dead, with more wounded after a
+                    suspected green-on-blue attack in the Sherzad district of Nangarhar province, a U.S. official told
+                    Newsweek.</p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565975/alexander-vindman.jpg?w=397&h=295&f=189080b2dc3ddec827b3ab4b72835928"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">U.S</h4>
+                </div>
+
+                <h2>Trump Rails Against Impeachment Witness Vindman a Day After Ousting Him</h2>
+                <p>"Actually, I don't know him, never spoke to him, or met him (I don't believe!)," the president wrote
+                    of Vindman on Twitter.</p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566028/birds-prey-box-office.jpg?w=397&h=295&f=fddb26f5556280ec9da181d8a4ca3eb6"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">NEWSGEEK</h4>
+                </div>
+
+                <h2>'Birds of Prey' Falls Short of Expectations with $33 Million Debut</h2>
+                <p>'Birds of Prey' falters in its debut weekend at the box office. Here are a few possible reasons why.
+                </p>
+            </article>
+        </div>
+        <div class="row mt-3">
+            <div class="container-fluid text-center">
+                <i class="fab fa-neos bg-danger p-2 text-white"></i> <span class="sub-headers">FEATURED
+                    SLIDESHOWS</span>
+                <hr>
+            </div>
+            <article class="col-sm-12 col-md-4 mt-2">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566044/bernie-sanders.jpg?w=397&h=295&f=a97d1aa9be73e32fdd4f7072c871acfa"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">U.S</h4>
+                </div>
+
+                <h2 class="main-headers">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</h2>
+            </article>
+            <article class="col-sm-12 col-md-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566006/oscar-statuette.jpg?w=397&h=295&f=ae547e546eb76a9fc25a118f01879dbd"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">U.S</h4>
+                </div>
+
+                <h2 class="main-headers">Goody Bag for Oscars 2020 Nominees Includes 12-Day Cruise and More</h2>
+            </article>
+            <article class="col-sm-12 col-md-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566011/tawny-nurse-shark-grazes-surface-talbot-bay.jpg?w=397&h=295&f=64c462b5aa7947042e3a70f27ca8a812"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">TECH & SCIENCE</h4>
+                </div>
+
+                <h2 class="main-headers">Tawny Sharks Spotted 'Dancing' as They Wait for Dinner</h2>
+            </article>
+            <article class="col-sm-12 col-md-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1566052/brad-pitt.jpg?w=397&h=295&f=ae1d0bb33114483d4279b52c666ce8cf"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">U.S</h4>
+                </div>
+
+                <h2 class="main-headers">Brad Pitt Says His 45-Second Oscar Speech Is 'More' Than John Bolton Got</h2>
+            </article>
+            <article class="col-sm-12 col-md-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565967/donald-trump.jpg?w=397&h=295&f=efe6c2c6fbc32584e7656b3d0b0370c3"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">POLITICS</h4>
+                </div>
+
+                <h2 class="main-headers">New York Republican Legislator Switches to the Democratic Party</h2>
+            </article>
+            <article class="col-sm-12 col-md-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                    <h4 class="text-danger p-2">WORLD</h4>
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h5 class="text-danger"><b>U.S</b></h5>
+            </div>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <div class="col-12 col-lg-4 mt-2 mb-4">
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566099/police-tape.jpg?w=397&h=265&f=02d4838e06b0b79df05a10f0090afe4a"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566086/kirkwood-ski-resort.jpg?w=397&h=265&f=f7b1b5452a04ecc32ab5a0106628298e"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>209-MPH Wind Gust Measured at California Peak Could Be a Record-Breaker</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-3">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566142/gayle-king.jpg?w=397&h=265&f=2025748d1bff61fbed6181aee7a61af3"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>#IStandWithGayle Trends After Gayle King Receives Death Threats</h2>
+                            <br>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h5 class="text-danger"><b>WORLD</b></h5>
+            </div>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <div class="col-12 col-lg-4 mt-2 mb-4">
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566099/police-tape.jpg?w=397&h=265&f=02d4838e06b0b79df05a10f0090afe4a"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</h2>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566086/kirkwood-ski-resort.jpg?w=397&h=265&f=f7b1b5452a04ecc32ab5a0106628298e"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>209-MPH Wind Gust Measured at California Peak Could Be a Record-Breaker</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-3">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566142/gayle-king.jpg?w=397&h=265&f=2025748d1bff61fbed6181aee7a61af3"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>#IStandWithGayle Trends After Gayle King Receives Death Threats</h2>
+                            <br>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h5 class="text-danger"><b>BUSINESS</b></h5>
+            </div>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <div class="col-12 col-lg-4 mt-2 mb-4">
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-3 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566099/police-tape.jpg?w=397&h=265&f=02d4838e06b0b79df05a10f0090afe4a"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-3 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566086/kirkwood-ski-resort.jpg?w=397&h=265&f=f7b1b5452a04ecc32ab5a0106628298e"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>209-MPH Wind Gust Measured at California Peak Could Be a Record-Breaker</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-3">
+                        <img class="float-left mr-3 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566142/gayle-king.jpg?w=397&h=265&f=2025748d1bff61fbed6181aee7a61af3"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>#IStandWithGayle Trends After Gayle King Receives Death Threats</h2>
+                            <br>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h5 class="text-danger"><b>Tech & Science</b></h5>
+            </div>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <div class="col-12 col-lg-4 mt-2 mb-4">
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566099/police-tape.jpg?w=397&h=265&f=02d4838e06b0b79df05a10f0090afe4a"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566086/kirkwood-ski-resort.jpg?w=397&h=265&f=f7b1b5452a04ecc32ab5a0106628298e"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>209-MPH Wind Gust Measured at California Peak Could Be a Record-Breaker</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-3">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566142/gayle-king.jpg?w=397&h=265&f=2025748d1bff61fbed6181aee7a61af3"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>#IStandWithGayle Trends After Gayle King Receives Death Threats</h2>
+                            <br>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h5 class="text-danger"><b>Culture</b></h5>
+            </div>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <div class="col-12 col-lg-4 mt-2 mb-4">
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566099/police-tape.jpg?w=397&h=265&f=02d4838e06b0b79df05a10f0090afe4a"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566086/kirkwood-ski-resort.jpg?w=397&h=265&f=f7b1b5452a04ecc32ab5a0106628298e"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>209-MPH Wind Gust Measured at California Peak Could Be a Record-Breaker</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-3">
+                        <img class="float-left mb-3 mr-2 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566142/gayle-king.jpg?w=397&h=265&f=2025748d1bff61fbed6181aee7a61af3"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>#IStandWithGayle Trends After Gayle King Receives Death Threats</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                </article>
+            </div>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h5 class="text-danger"><b>Sports</b></h5>
+            </div>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-4">
+                <div class="mb-2">
+                    <img class="w-100"
+                        src="https://d.newsweek.com/en/full/1565980/us-troops-nangarhar-afghanistan-war.jpg?w=397&h=295&f=5a0f61eb795be574068ca2bb40480f04"
+                        alt="navy Medicine san diego">
+                </div>
+
+                <h2 class="main-headers">U.S. and Afghan Special Operations Forces Killed in Deadly Ambush</h2>
+            </article>
+            <div class="col-12 col-lg-4 mt-2 mb-4">
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566099/police-tape.jpg?w=397&h=265&f=02d4838e06b0b79df05a10f0090afe4a"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-4">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566086/kirkwood-ski-resort.jpg?w=397&h=265&f=f7b1b5452a04ecc32ab5a0106628298e"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>209-MPH Wind Gust Measured at California Peak Could Be a Record-Breaker</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-11 no-padding">
+                    <div class="mb-3">
+                        <img class="float-left mr-2 mb-3 latest-news-thumbnail"
+                            src="https://d.newsweek.com/en/full/1566142/gayle-king.jpg?w=397&h=265&f=2025748d1bff61fbed6181aee7a61af3"
+                            alt="vladimir-putin-barack-obama">
+                        <a href="#" class="hover-red">
+                            <h2>#IStandWithGayle Trends After Gayle King Receives Death Threats</h2>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                </article>
+            </div>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8 mt-2 mb-4">
+                <div class="container-fluid  no-padding">
+                    <h5 class="text-danger small"><b>SUBSCRIBE</b></h5>
+                </div>
+                <div id="subscribe-container" class="row mx-0 mb-2 px-3 py-4 bg-light">
+                    <div id="subscribe-magazines" class="col-sm-8 col-md-4">
+                        <div>
+                            <img src="https://d.newsweek.com/en/full/1563281/february-7-2020-cover.jpg?w=170&q=95&f=65b7533b0137978d446aa40a1c50692a"
+                                alt="subscribe-mag">
+                        </div>
+                        <div>
+                            <img src="https://d.newsweek.com/en/full/1564924/february-14-2020-cover.jpg?w=170&q=95&f=c1d5601167747525a4d15e56749350ec"
+                                alt="subscribe">
+
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8 pl-5 pt-4 text-center">
+                        <h4 class="custom-font"><b>In-depth Stories You Don't See Elsewhere About Topics You Want to
+                                Read!</b></h4>
+                        <p class="small">All Access + Weekly Delivery. <br>
+                            Choose A Membership That's Perfect for You!</p>
+                        <a href="#" class="red-links custom-font">SUBSCRIBE ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-2 mb-4">
+                <div class="container-fluid no-padding">
+                    <h5 class="text-danger small"><b>NEWSLETTER</b></h5>
+                </div>
+                <div class="px-3 py-2">
+                    <div id="newsletter-container" class="row no-padding no-border-radius">
+                        <div class="col-md-4 col-lg-6"></div>
+                        <div class="col-md-8 col-lg-6 d-flex text-center py-4">
+                            <h4 class="custom-font"><b>The Starting 5</b></h4>
+                            <p class="small">Take back your inbox. <br> Sign up for our newsletter and start making sense of
+                                the world around you.</p>
+                            <a href="#" class="red-links custom-font">SIGN UP ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid text-center">
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer class="col-lg-8 offset-lg-2">
+        <div class="row">
+            <div class="container">
+                <div id="copyright" class="float-left d-flex">
+                    <a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+                        <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+                        </g></svg></a>
+                        <span class="col-12">© 2020 NEWSWEEK</span>
+                </div>
+                <ul id="social-links" class="float-right">
+                    <li><a href="#"><i class="fab fa-facebook text-dark"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram text-dark"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin text-dark"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container d-flex pl-4">
+                <b class="small">Editions:</b>
+                <ul class="footer-links">
+                    <li><a href="#">U.S. Edition</a></li>
+                    <li><a href="#">日本</a></li>
+                    <li><a href="#">Pakistan</a></li>
+                    <li><a href="#">Polska</a></li>
+                    <li><a href="#">România</a></li>
+                </ul>
+            </div>
+            <div class="container no-padding">
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Corrections</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Editorial Guidelines</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms of Sale</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Consent preferences</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b53238e3c8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
