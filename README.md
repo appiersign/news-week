@@ -27,6 +27,6 @@
 
 This project is for educational purposes only, suggestions are accepted, but no contributions.
 
-## 🤝 Show Your Support
+## Show Your Support
 
 Kindly give me a star if you like this project
