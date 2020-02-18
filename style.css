@@ -1,5 +1,6 @@
 body {
   background-color: #f4f5f6;
+  font-size: 16px;
 }
 
 header {
@@ -26,8 +27,16 @@ nav {
   height: 56px;
 }
 
+nav div ul{
+  height: 10px
+}
+
+nav div ul li{
+  line-height: 12px;
+}
+
 .font-size-21 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 svg {
