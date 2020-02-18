@@ -23,8 +23,15 @@ header {
   height: 100px
 }
 
+#min-logo {
+  width: 80px;
+  height: auto;
+  fill:white
+}
+
 nav {
   height: 56px;
+  background-color: white;
 }
 
 nav div ul{
@@ -39,7 +46,7 @@ nav div ul li{
   font-size: 1.2em;
 }
 
-svg {
+#logo {
   height: auto;
   width: 360px;
   fill: white;
@@ -48,6 +55,10 @@ svg {
 @media only screen and (max-width: 768px) {
   nav {
     background-color: #f72210 !important;
+  }
+
+  header {
+    height: 50px;
   }
 }
 
