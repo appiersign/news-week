@@ -44,3 +44,15 @@ svg {
   width: 360px;
   fill: white;
 }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: #f72210 !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    background-color: white;
+  }
+}
