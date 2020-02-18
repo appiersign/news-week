@@ -26,6 +26,10 @@ nav {
   height: 56px;
 }
 
+.font-size-21 {
+  font-size: 1.3em;
+}
+
 svg {
   height: auto;
   width: 360px;
