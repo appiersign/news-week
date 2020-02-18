@@ -1,0 +1,19 @@
+header {
+    height: 150px;
+}
+
+.roboto-condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.arial-helvetica {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner {
+  height: 100px
+}
+
+svg {
+  fill: white;
+}
