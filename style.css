@@ -43,13 +43,26 @@ nav div ul li{
 }
 
 .font-size-21 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 #logo {
   height: auto;
   width: 360px;
   fill: white;
+}
+
+main {
+  min-height: 500px;
+}
+
+.gray-section-header {
+  color: rgba(3,3,3,.4);
+}
+
+section h1 {
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
