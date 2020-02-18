@@ -2,6 +2,9 @@ header {
     height: 150px;
 }
 
+#content {
+  max-width: 1310px;
+}
 .roboto-condensed {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -12,8 +15,4 @@ header {
 
 #banner {
   height: 100px
-}
-
-svg {
-  fill: white;
 }
