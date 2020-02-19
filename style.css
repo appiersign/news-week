@@ -68,6 +68,15 @@ section h1 {
 .opinion > a:hover {
   color: #ef4e17 !important;
 }
+.tags {
+  left: 15px;
+  bottom: 0;
+  opacity: .8
+}
+
+.font-24 {
+  font-size: 1.6em;
+}
 
 @media only screen and (max-width: 768px) {
   nav {
@@ -80,11 +89,6 @@ section h1 {
 
   .opinion {
     height: 73px;
-  }
-
-  .opinion > figure {
-    width: 63px;
-    height: 63px;
   }
 }
 
