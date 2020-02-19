@@ -68,10 +68,15 @@ section h1 {
 .opinion > a:hover {
   color: #ef4e17 !important;
 }
+
 .tags {
   left: 15px;
   bottom: 0;
   opacity: .8
+}
+
+.card .tags {
+  left: 0;
 }
 
 .font-20 {
