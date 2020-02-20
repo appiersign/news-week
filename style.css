@@ -98,7 +98,15 @@ section h1, h3 {
   line-height: 24px;
 }
 
-.font-18 {
+.more-stories-item h2 {
+  font-size: 18px;
+}
+
+.more-stories-item p {
+  font-size: 15px;
+}
+
+.font-24 {
   font-size: 24px;
   line-height: 20px
 }
