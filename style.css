@@ -84,6 +84,10 @@ section h1, h3 {
     font-weight: 600;
 }
 
+.opinion {
+    height: 100px;
+}
+
 .opinion > a:hover {
     color: #ef4e17 !important;
 }
@@ -136,9 +140,5 @@ section h1, h3 {
 
     header {
         height: 50px;
-    }
-
-    .opinion {
-        height: 73px;
     }
 }
