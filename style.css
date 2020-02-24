@@ -165,6 +165,11 @@ a.bg-gray:hover {
     bottom: 16px;
 }
 
+.editors-pick-tags {
+    left: 0;
+    bottom: 0;
+}
+
 @media only screen and (min-width: 1024px) {
     nav {
         background-color: #f72210 !important;
