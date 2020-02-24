@@ -141,6 +141,44 @@ section h1, h3 {
     min-height: 400px;
 }
 
+.bg-gray {
+    background-color: #f4f5f6!important;
+}
+
+a.bg-gray:hover {
+    background-color: #ced4da!important;
+}
+
+.n-icon {
+    display: block;
+    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+    height: 28px;
+    width: 28px;
+}
+
+.h-290 {
+    height: 290px;
+}
+
+.in-mag-tags {
+    left: 0;
+    bottom: 16px;
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        background-color: #f72210 !important;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .in-mag-img {
+        height: 200px;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     nav {
         background-color: #f72210 !important;
@@ -151,8 +189,32 @@ section h1, h3 {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .opinion > div > a {
+        font-size: 2px!important;
+    }
+
+    .in-mag-img {
+        height: 429px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .opinion > div > a {
+        font-size: 2px!important;
+    }
+
+    .in-mag-img {
+        height: 429px;
+    }
+}
+
 @media only screen and (max-width: 426px) {
     .opinion > div > a {
         font-size: 2px!important;
+    }
+
+    .in-mag-img {
+        height: 429px;
     }
 }
