@@ -170,6 +170,15 @@ a.bg-gray:hover {
     bottom: 0;
 }
 
+.slide-shows {
+    background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+    color: #e9212e;
+    height: 38px;
+    width: 48px;
+    font-size: 20px;
+    text-indent: 5px;
+}
+
 @media only screen and (min-width: 1024px) {
     nav {
         background-color: #f72210 !important;
