@@ -179,6 +179,17 @@ a.bg-gray:hover {
     text-indent: 5px;
 }
 
+.red-text {
+    color: #e9212e;
+}
+
+.subs {
+    height: 367px;
+}
+
+.subs article {
+    height: 105px;
+}
 @media only screen and (min-width: 1024px) {
     nav {
         background-color: #f72210 !important;
