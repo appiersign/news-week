@@ -179,8 +179,25 @@ a.bg-gray:hover {
     text-indent: 5px;
 }
 
+#subscribe {
+    min-height: 300px;
+}
+
+#subscribe-cover {
+    top: 20px;
+    left: 15%;
+}
+
+#subscribe > div:nth-child(2) > p:nth-child(1) {
+    font-size: 24px;
+}
+
 .red-text {
     color: #e9212e;
+}
+
+.bg-red {
+    background-color: #e9212e !important;
 }
 
 .subs {
@@ -222,6 +239,10 @@ a.bg-gray:hover {
     .in-mag-img {
         height: 429px;
     }
+
+    #subscribe-cover {
+        left: 45%;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -232,6 +253,10 @@ a.bg-gray:hover {
     .in-mag-img {
         height: 429px;
     }
+
+    #subscribe > div:nth-child(2) > p:nth-child(1) {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 426px) {
@@ -241,5 +266,9 @@ a.bg-gray:hover {
 
     .in-mag-img {
         height: 429px;
+    }
+
+    #subscribe-cover {
+        left: 25%;
     }
 }
