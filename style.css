@@ -230,6 +230,26 @@ a.bg-gray:hover {
 .subs article {
     height: 105px;
 }
+
+#footer-logo-container {
+    height: 40px;
+}
+
+#footer-logo-link {
+    height: 36px;
+}
+
+#footer-logo {
+    height: 36px;
+    width: 236px;
+    fill: red;
+}
+
+#social-icons > a {
+    text-decoration: none;
+    color: #666;
+}
+
 @media only screen and (min-width: 1024px) {
     header {
         height: 156px;
@@ -281,6 +301,10 @@ a.bg-gray:hover {
 
     #newsletter > div > div > div:nth-child(1) {
         height: 160px;
+    }
+
+    #footer-logo-container {
+        height: 60px;
     }
 }
 
