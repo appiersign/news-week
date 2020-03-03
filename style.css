@@ -225,6 +225,10 @@ a.bg-gray:hover {
     text-decoration-color: #e9212e !important;
 }
 
+.hover-red-text {
+    color: black;
+}
+
 .hover-red-text:hover {
     color: #e9212e !important;
 }
