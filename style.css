@@ -231,10 +231,6 @@ a.bg-gray:hover {
     height: 105px;
 }
 @media only screen and (min-width: 1024px) {
-    nav {
-        background-color: #f72210 !important;
-    }
-
     header {
         height: 156px;
     }
@@ -244,13 +240,13 @@ a.bg-gray:hover {
     }
 }
 
-@media only screen and (max-width: 992px) {
-    nav {
-        background-color: #f72210 !important;
+@media only screen and (max-width: 991px) {
+    header {
+        height: 56px;
     }
 
-    header {
-        height: 156px;
+    nav {
+        background-color: #f72210 !important;
     }
 
     #newsletter {
