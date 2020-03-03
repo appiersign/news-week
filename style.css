@@ -215,6 +215,20 @@ a.bg-gray:hover {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+.hover-red-underline {
+    color: black;
+}
+
+.hover-red-underline:hover {
+    color: black;
+    text-decoration: underline !important;
+    text-decoration-color: #e9212e !important;
+}
+
+.hover-red-text:hover {
+    color: #e9212e !important;
+}
+
 .red-text {
     color: #e9212e;
 }
