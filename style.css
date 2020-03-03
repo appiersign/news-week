@@ -236,7 +236,7 @@ a.bg-gray:hover {
     }
 
     header {
-        height: 50px;
+        height: 156px;
     }
 
     .in-mag-img {
@@ -250,7 +250,7 @@ a.bg-gray:hover {
     }
 
     header {
-        height: 50px;
+        height: 156px;
     }
 
     #newsletter {
@@ -299,6 +299,10 @@ a.bg-gray:hover {
 
     #subscribe > div:nth-child(2) > p:nth-child(1) {
         font-size: 20px;
+    }
+
+    #newsletter > div:nth-child(1) {
+        height: 360px;
     }
 }
 
