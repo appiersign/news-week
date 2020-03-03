@@ -250,6 +250,14 @@ a.bg-gray:hover {
     color: #666;
 }
 
+.footer-links {
+    color: #666!important;
+}
+
+.footer-links:hover {
+    color: black!important;
+}
+
 @media only screen and (min-width: 1024px) {
     header {
         height: 156px;
