@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Microverse 7th Project">
+    <meta name="author" content="Solomon Appier-Sign">
+    <title>News Week Clone</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./assets/styles/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="content" class="mx-auto">
+    <header class="container-fluid border-bottom">
+        <div id="banner" class="row pull-md-12 d-none d-lg-flex justify-content-between align-items-end bg-red p-4">
+            <p class="text-white">Mon, Feb 17, 2020</p>
+            <a href="#">
+                <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                     style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+            <path class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+          </g></svg>
+            </a>
+            <div class="d-flex flex-row justify-around align-items-center roboto-condensed">
+                <a href="#" class="text-white p-2 mr-1 font-weight-bold">SIGN IN</a>
+                <a href="#" class="bg-white p-1 text-danger">SUBSCRIBE ></a>
+            </div>
+        </div>
+        <div class="row">
+            <nav id="main-nav"
+                 class="navbar navbar-expand-lg navbar-dark w-100 d-md-flex flex-row justify-content-between">
+                <a id="min-logo" href="#" class="d-lg-none">
+                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                         style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+              <path class="st0"
+                    d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+            </g></svg>
+                </a>
+                <div class="d-lg-none d-flex flex-row justify-around align-items-center roboto-condensed">
+                    <a href="#" class="text-white p-2 mr-1 font-weight-bold">SIGN IN</a>
+                    <a href="#" class="bg-white p-1 text-danger">SUBSCRIBE ></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse d-lg-flex flex-row justify-content-start" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto roboto-condensed font-weight-bold d-flex flex-row align-items-center">
+                        <li class="nav-item border-right">
+                            <a class="nav-link text-dark font-size-21 pr-3 align-self-center" href="#">U.S.</a>
+                        </li>
+                        <li class="nav-item active border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">World</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Business</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Tech & Science</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Culture</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Newsgeek</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Health</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">The Debate</a>
+                        </li>
+                        <li class="nav-item border-right px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Vantage</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark font-size-21" href="#">Weather</a>
+                        </li>
+                        <li>
+                            <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container-fluid bg-white p-4 min-height">
+        <div id="first-section" class="row">
+            <section
+                    class="col-12 order-2 order-sm-2 col-sm-5 col-lg-3 order-md-1 gray-section-header roboto-condensed">
+                <h1>FEATURED STORIES</h1>
+                <article class="row">
+                    <div class="container position-relative mb-2">
+                        <img class="w-100"
+                             src="https://d.newsweek.com/en/full/1567824/mike-bloomberg-2020-debate.jpg?w=397&h=265&q=90&f=eb1a7006097bb0594bae4a3a8252cfe4"
+                             alt="">
+                        <a href="#" class="position-absolute tags bg-white py-1 px-2 text-danger font-weight-bolder">U.S.</a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">Nevada
+                            Debate Likely to Be Most Contentious Yet, as Bloomberg Faces Rivals</h2></a>
+                    </div>
+                    <div class="container arial-helvetica">
+                        <p class="text-dark">"What you'll see is an attempt to cut him down because he is on the move,"
+                            political consultant Hank Sheinkopf said.</p>
+                    </div>
+                </article>
+                <article class="row">
+                    <div class="container position-relative mb-2">
+                        <img class="w-100"
+                             src="https://d.newsweek.com/en/full/1568037/bernie-sanders.jpg?w=397&h=265&q=90&f=a0c8a9a000f407014f0de68ef9386b22"
+                             alt="">
+                        <a href="#" class="position-absolute tags bg-white py-1 px-2 text-danger font-weight-bolder">U.S.</a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">Bernie
+                            Sanders Is Clear Democratic Front-Runner Ahead of Nevada Caucus: Poll</h2></a>
+                    </div>
+                    <div class="container arial-helvetica">
+                        <p class="text-dark">"The senator from Vermont has seen an uptick in support from hispanic
+                            voters, with a plurality of 42 percent of the demographic backing his candidacy.</p>
+                    </div>
+                </article>
+                <article class="row">
+                    <div class="container position-relative mb-2">
+                        <img class="w-100"
+                             src="https://d.newsweek.com/en/full/1567780/ice.jpg?w=397&h=265&q=90&f=828a4e5b035a0ddefb2c32c5abbea717"
+                             alt="">
+                        <a href="#" class="position-absolute tags bg-white py-1 px-2 text-danger font-weight-bolder">U.S.</a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">ACLU
+                            Races to Stop ICE From Deleting Years of Detention Records</h2></a>
+                    </div>
+                    <div class="container arial-helvetica">
+                        <p class="text-dark">"Records that have been created from, for example, the beginning of the
+                            Trump administration, are now perhaps in great danger of being destroyed," said ACLU Senior
+                            Staff Attorney Eunice Cho.</p>
+                    </div>
+                </article>
+                <article class="row">
+                    <div class="container position-relative mb-2">
+                        <img class="w-100"
+                             src="https://d.newsweek.com/en/full/1567823/drugs-medication-antibiotics-stock-getty.jpg?w=397&h=265&q=90&f=e548ff9f3aeee4995e608fe67d32cd45"
+                             alt="">
+                        <a href="#" class="position-absolute tags bg-white py-1 px-2 text-danger font-weight-bolder">HEALTH</a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                            Chemotherapy for Cancer Could Soon Be Unviable Because of Superbugs</h2></a>
+                    </div>
+                    <div class="container arial-helvetica">
+                        <p class="text-dark">At least 700,000 people die each year from drug-resistant infections.</p>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1551965/wayne-state-university-college-nursing.jpg?w=343&h=229&l=0&t=0&f=4c20a90759627de34973d49221abcf5e"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">SPONSORED INSIGHT</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    Nurses - The Real Medical Heroes of 2020</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">We’re used to doctors bustling in and out when in hospital, but
+                                    it’s the reassuring presence and professionalism of the nursing staff that we rely
+                                    on. What sets the best ones apart?</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1563523/meet-adam-lambert-new-york-city.png?w=343&h=229&f=5650ee55eada1c2dbd4be78a28f9d8d0"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">NYC</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    Meet Adam Lambert in New York City!</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">Enter the sweepstake for your chance to meet music sensation Adam
+                                    Lambert and attend the live taping of his appearance on Newsweek Conversations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1551965/wayne-state-university-college-nursing.jpg?w=343&h=229&l=0&t=0&f=4c20a90759627de34973d49221abcf5e"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">SPONSORED INSIGHT</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    Nurses - The Real Medical Heroes of 2020</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">We’re used to doctors bustling in and out when in hospital, but
+                                    it’s the reassuring presence and professionalism of the nursing staff that we rely
+                                    on. What sets the best ones apart?</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1551965/wayne-state-university-college-nursing.jpg?w=343&h=229&l=0&t=0&f=4c20a90759627de34973d49221abcf5e"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">SPONSORED INSIGHT</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    Nurses - The Real Medical Heroes of 2020</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">We’re used to doctors bustling in and out when in hospital, but
+                                    it’s the reassuring presence and professionalism of the nursing staff that we rely
+                                    on. What sets the best ones apart?</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section
+                    class="col-12 order-1 order-sm-1 col-sm-7 col-lg-5 order-md-2 gray-section-header roboto-condensed">
+                <h1>TOP STORY</h1>
+                <article class="row">
+                    <div class="container position-relative mb-2">
+                        <img class="w-100"
+                             src="https://d.newsweek.com/en/full/1567975/china-coronavirus-covid-19-2019ncov.jpg?w=591&h=364&f=c0739beba858eef727d1adca7e210ad2"
+                             alt="">
+                        <a href="#" class="position-absolute tags bg-white py-1 px-2 text-danger font-weight-bolder">HEALTH</a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                            Coronavirus Recoveries Overtake New Cases in China for the First Time</h2></a>
+                    </div>
+                    <div class="container arial-helvetica">
+                        <p class="text-dark">A total of 1,749 new cases of coronavirus were reported on Tuesday, while
+                            1,824 patients were released from hospital "after being cured," according to China's
+                            National Health Commission.</p>
+                    </div>
+                </article>
+                <div class="row px-3 mb-2">
+                    <div class="container-fluid bg-light px-0 order-2 order-sm-1">
+                        <div class="row min-height m-0 p-0">
+                            <h3 class="roboto-condensed font-weight-bold medium col-12 pl-2 pt-2">CULTURE & TRAVEL</h3>
+                            <article class="col-12 col-sm-6 p-0 pr-sm-2 mb-3">
+                                <div class="mb-2">
+                                    <img class="w-100"
+                                         src="https://d.newsweek.com/en/full/1568334/john-f-kennedy-airport-nyc-january-20.jpg?w=397&h=265&f=2d9ca10aed08f1eda56f0a10acff0be8"
+                                         alt="">
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="text-decoration-none text-dark"><h2 class="font-20 lora">Asia
+                                        Flight Prices Drop Following Coronavirus Fears</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-default">Several airlines are offering lower prices for flights to
+                                        Asia, while others have reduced their services to the region due to falling
+                                        demand.</p>
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="px-3 py-2 text-decoration-none small-tags small">News</a>
+                                </div>
+                            </article>
+                            <article class="col-12 col-sm-6 p-0 pl-sm-2 mb-3">
+                                <div class="mb-2">
+                                    <img class="w-100"
+                                         src="https://d.newsweek.com/en/full/1563912/biggie-billboard-music-awards.jpg?w=397&h=265&f=9da78474495020fbaaa80c18d68f09d5"
+                                         alt="">
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="text-decoration-none text-dark"><h2 class="font-20 lora">Biggie:
+                                        The Larger-Than-Life Rap Icon Who Brought Hip-Hop to the Masses</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-default">In honor of the Notorious B.I.G.'s 2020 induction into the
+                                        Rock & Roll Hall of Fame, here's a look at how the icon moved rap from a
+                                        counterculture into the mainstream.</p>
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="px-3 py-2 text-decoration-none small-tags small">Music</a>
+                                </div>
+                            </article>
+                            <article class="col-12 col-sm-6 p-0 pr-sm-2 mb-3">
+                                <div class="mb-2">
+                                    <img class="w-100"
+                                         src="https://d.newsweek.com/en/full/1566346/cul-map-pilgrimages-banner.jpg?w=397&h=265&f=ea3f5ab67d879111edcc113a9128afb8"
+                                         alt="">
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="text-decoration-none text-dark"><h2 class="font-20 lora">Sacred
+                                        Journeys Around the World</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-default">Escape the crowds on El Camino on these alternative
+                                        pilgrimages around the world. Follow in the footsteps of Buddhist monks in Japan
+                                        or a revered Viking king in Scandinavia or seek a shaman's healing in ice-cold
+                                        lagoons in Peru.</p>
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="px-3 py-2 text-decoration-none small-tags small">Travel</a>
+                                </div>
+                            </article>
+                            <article class="col-12 col-sm-6 p-0 pl-sm-2 mb-3">
+                                <div class="mb-2">
+                                    <img class="w-100"
+                                         src="https://d.newsweek.com/en/full/1566195/cul-books-01-578945297-banner.jpg?w=397&h=265&l=53&t=47&f=2fc357c2b70801725243d83f4604a3a0"
+                                         alt="">
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="text-decoration-none text-dark"><h2 class="font-20 lora">40
+                                        Must-Read Fiction and Nonfiction Books to Savor This Spring</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-default">Newsweek's top fiction and nonfiction spring books to
+                                        entertain and excite your imagination from the blustery days of late winter
+                                        until the sun shines in the spring.</p>
+                                </div>
+                                <div class="container">
+                                    <a href="#" class="px-3 py-2 text-decoration-none small-tags small">Books</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="container-fluid px-0 order-1 order-sm-2">
+                        <div class="row min-height m-0 p-0">
+                            <h3 class="roboto-condensed font-weight-bold medium col-12 pl-2 pt-2">MORE STORIES</h3>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568416/white-house-releases-memorandum-president-trumps-call-ukrainian-president-volodymyr-zelensky.jpg?w=135&h=90&f=6a238ebcef8048fc2e01bf2e34b87580"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Feds Charge Man With
+                                        Threatening Ukraine Whistleblower, Attorney</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">Critics have accused the president and his allies of attempting
+                                        to intimidate and out the whistleblower.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568379/mike-bloomberg-donald-trump-nevada-2020-election.jpg?w=135&h=90&f=d51e6db958faf6a569729449d1907863"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Bloomberg Might Skip
+                                        Future Debates, 'Doubt' He Can Handle Trump: Expert</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">The billionaire former mayor of New York endured a torrid time
+                                        on stage in Nevada, struggling to fend off attacks from his competitors.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568427/border.jpg?w=135&h=90&f=aca1497593ed8a3a314fbe30c38c8dd4"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Judge Says Conditions at
+                                        Border Holding Cells Violated Constitution</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">"Today's decision is a tremendous victory for communities
+                                        everywhere fighting courageously to uphold human dignity," said Alvaro Huerta,
+                                        staff attorney at the National Immigration Law Center.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568376/richard-grenell.jpg?w=135&h=90&f=bb3e0139ef6af9e8143fb4f6596e79a8"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Trump's New Intelligence
+                                        Chief Is 'Gold' Member of 'Trump Card' Program</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">Richard Grenell previously served as President Donald Trump's
+                                        ambassador to Germany.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568424/dmv.jpg?w=135&h=90&f=02db8a01b4ddb28285178697ea7670e3"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">ICE Chief Says New York
+                                        Lawmakers Have 'Pre-9/11 Mentality'</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">ICE Acting Director Matthew Albence branded New York's "Green
+                                        Light Law" as "irresponsible, unnecessary and downright dangerous."</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568411/billie-jean-king.jpg?w=135&h=90&f=b7dd3602ecfbe80ffb161a54f23439ec"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Feminist Icon and Tennis
+                                        Legend Billie Jean King Is Becoming a Barbie Doll</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">Tennis icon Billie Jean King is the latest woman to become a
+                                        Barbie in the toy's Inspiring Women series.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568214/bernie-sanders-donald-trump-capitalism-vs-socialism.jpg?w=135&h=90&f=dba72bbdeb90de0f5ac3f32e4a4cda8d"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Could a Bernie Sanders
+                                        Nomination Create a Capitalism vs. Socialism Race?</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">Fears that a Donald Trump vs. Bernie Sanders match-up could set
+                                        the presidential race up for a referendum on capitalism vs. socialism are
+                                        overblown, strategists said. The picture is more nuanced.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568308/michael-bloomberg.jpg?w=135&h=90&f=149db4ebe6cc8d12b61a76136cecf1c3"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Bloomberg to Pay People
+                                        $2,500 a Month to Praise Him on Social Media Feeds</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">The billionaire's team is reportedly now hiring more than 500
+                                        "deputy digital organizers" to work up to 30 hours a week and promote his
+                                        presidential campaign's message to their friends.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568249/bellagio.jpg?w=135&h=90&f=11379732b591a0c6b8262142673b454e"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">MGM Resorts Hack Exposes
+                                        Personal Data of 10 Million Hotel Guests</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">The data included names, home addresses, email addresses, and
+                                        phone numbers, but does not appear to have resulted in the loss of guests'
+                                        financial details, an MGM spokesperson said.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568252/mick-mulvaney-donald-trump-oval-office-deficit.jpg?w=135&h=90&f=4b781391157cb05a55abd11fa2e11c9f"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">Trump Aides Have Loud,
+                                        Gladiator-Like Fights in the Oval Office: Mulvaney</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">Mick Mulvaney also said that the "deep state" is still trying
+                                        to hinder Donald Trump and expressed frustration that the president could not
+                                        fire more obstructive officials.</p>
+                                </div>
+                            </article>
+                            <article class="col-12 p-0 pt-3 mb-1 border-top more-stories-item">
+                                <div class="float-left mr-3">
+                                    <img class=""
+                                         src="https://d.newsweek.com/en/full/1568053/sdf-syria-weapons-us-isis-lost-stolen.jpg?w=135&h=90&f=96b9e12adb97921e2f1fa27b8ad62920"
+                                         alt="">
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-decoration-none hover-red-underline"><h2
+                                            class="font-17 roboto-condensed font-weight-bold">U.S. Military Left Weapons
+                                        'Vulnerable to Loss or Theft' in Syria: Report</h2></a>
+                                </div>
+                                <div class="container arial-helvetica">
+                                    <p class="text-dark">A new report says officials failed to adequately track and
+                                        store hundreds of millions of dollars worth of weapons sent to support U.S.
+                                        allies.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                    class="col-12 col-sm-12 order-3 col-lg-4 gray-section-header roboto-condensed d-flex flex-column justify-content-start">
+                <h1>OPINION</h1>
+                <article class="row opinion roboto-condensed border-bottom">
+                    <div class="col-12">
+                        <div class="float-left mr-3 mb-5">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png?w=63&h=63&f=ca92d03f69e06f6dd117bf04cef90475"
+                                 alt="">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-decoration-none hover-red-text"><h3>Dear Donna Rotunno: Your Reckless
+                                Words on Sexual Assault Hurt All of Us</h3></a>
+                            <p class="font-weight-bold roboto-condensed">BY JOAN COOK AND ANNE P. DEPRINCE</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="row opinion roboto-condensed border-bottom mt-2">
+                    <div class="col-12">
+                        <div class="float-left mr-3 mb-5">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1528785/roff-new.png?w=63&h=63&f=4dc2ef8dad149bbca161552d8b875591"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h3>A Disaster of a Democratic Debate,
+                                With a Temporary Side of Bloomberg</h3></a>
+                            <p class="font-weight-bold roboto-condensed">BY PETER ROFF</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="row opinion roboto-condensed mt-2 border-bottom">
+                    <div class="col-12">
+                        <div class="float-left mr-3 mt-auto mb-5">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568374/joan-cook-anne-p-deprince.png?w=63&h=63&f=82778686643924d0ed78d01769176dd0"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h3 class="">Why
+                                Trump and His Supporters Love to Hate Nancy Pelosi </h3></a>
+                            <p class="font-weight-bold roboto-condensed">BY NANCY COHEN</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="row opinion roboto-condensed py-3 border-bottom">
+                    <div class="col-12">
+                        <div class="float-left mr-3 my-auto">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1567925/michael-mcdonald.png?w=63&h=63&f=f159da44ad96da20d1f384d2fdd701e3"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h3>Say What You Will About Boomers—They
+                                Vote</h3></a>
+                            <p class="font-weight-bold roboto-condensed">BY MICHAEL MCDONALD</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="row opinion roboto-condensed py-3 border-bottom">
+                    <div class="col-12">
+                        <div class="float-left mr-3 my-auto">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568374/joan-cook-anne-p-deprince.png?w=63&h=63&f=82778686643924d0ed78d01769176dd0"
+                                 alt="">
+                        </div>
+                        <div class="">
+                            <a href="#" class="text-decoration-none hover-red-text"><h3 class="">Why Trump and His Supporters
+                                Love to Hate Nancy Pelosi</h3></a>
+                            <p class="font-weight-bold roboto-condensed">BY NANCY COHEN</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="row opinion roboto-condensed py-3 border-bottom">
+                    <div class="col-12">
+                        <div class="float-left mr-3 my-auto">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1567922/sean-medcalf.png?w=63&h=63&f=273a667cf924b116ed8385c9c3296ea0"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h3>The Fed's Cryptocurrency Head
+                                Fake</h3></a>
+                            <p class="font-weight-bold roboto-condensed">BY SEAN MEDCALF</p>
+                        </div>
+                    </div>
+                </article>
+                <br>
+                <h1>LATEST NEWS</h1>
+                <article class="row p-0 pt-3 mb-1 border-bottom">
+                    <div class="col-12 latest-news-item mb-3">
+                        <div class="float-left mr-3">
+                            <img class="latest-news-item-img"
+                                 src="https://d.newsweek.com/en/full/1568496/bts.jpg?w=397&h=265&f=0b9cf7d8f9a7d6bcde3285cd90f095f1"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h2
+                                    class="latest-news-item-header roboto-condensed font-weight-bold">U.S. Military Left
+                                Weapons
+                                'Vulnerable to Loss or Theft' in Syria: Report</h2></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row p-0 pt-3 mb-1 border-bottom">
+                    <div class="col-12 latest-news-item mb-3">
+                        <div class="float-left mr-3">
+                            <img class="latest-news-item-img"
+                                 src="https://d.newsweek.com/en/full/1568619/boat-near-western-antarctic-peninsula.jpg?w=397&h=265&f=49768b5c21047cde6ebee849f7c8b1fb"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h2
+                                    class="latest-news-item-header roboto-condensed font-weight-bold">Twitter Copy and
+                                Pastes 'Copy and Paste Inventor Larry Tesler Dies Aged 74'</h2></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row p-0 pt-3 mb-1 border-bottom">
+                    <div class="col-12 latest-news-item mb-3">
+                        <div class="float-left mr-3">
+                            <img class="latest-news-item-img"
+                                 src="https://d.newsweek.com/en/full/1568630/larry-tesler.jpg?w=397&h=265&f=975f92e5b621a9fff77c1fcfef579d17"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h2
+                                    class="latest-news-item-header roboto-condensed font-weight-bold">Warren Would
+                                'Clean House' At ICE, CBP, Joaquin Castro Says</h2></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row p-0 pt-3 mb-1 border-bottom">
+                    <div class="col-12 latest-news-item mb-3">
+                        <div class="float-left mr-3">
+                            <img class="latest-news-item-img"
+                                 src="https://d.newsweek.com/en/full/1568420/hunters.jpg?w=397&h=265&f=978aa7b8eeeae79700ae4140a4af1df6"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h2
+                                    class="latest-news-item-header roboto-condensed font-weight-bold">Amazon's 'Hunters'
+                                Is Rooted in True Story of Nazis in America</h2></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row p-0 pt-3 mb-1 border-bottom">
+                    <div class="col-12 latest-news-item mb-3">
+                        <div class="float-left mr-3">
+                            <img class="latest-news-item-img"
+                                 src="https://d.newsweek.com/en/full/1568623/warren.jpg?w=397&h=265&l=0&t=0&f=9b0c5d91cc6e7cf213c6825347b99de9"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h2
+                                    class="latest-news-item-header roboto-condensed font-weight-bold">BTS, Grimes and
+                                More Release New Albums: What You Should Listen to Today</h2></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row p-0 pt-3 mb-1 border-bottom">
+                    <div class="col-12 latest-news-item mb-3">
+                        <div class="float-left mr-3">
+                            <img class="latest-news-item-img"
+                                 src="https://d.newsweek.com/en/full/1568629/sanders-trump-defeat-sanders-debate.jpg?w=397&h=265&f=cd504487ccdecd86f1f8a7d9e3229a55"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h2
+                                    class="latest-news-item-header roboto-condensed font-weight-bold">Sanders Says Trump
+                                Would 'Chew Up and Spit Out' Bloomberg After Debate</h2></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row p-0 pt-3 mb-1 border-bottom">
+                    <div class="col-12 latest-news-item mb-3">
+                        <div class="float-left mr-3">
+                            <img class="latest-news-item-img"
+                                 src="https://d.newsweek.com/en/full/1568628/bts-map-soul-7-album-dominates-top-20-itunes-us-charts.jpg?w=397&h=265&f=fc1f58447f08f40c13983c98b9d155e6"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-text"><h2
+                                    class="latest-news-item-header roboto-condensed font-weight-bold">Antarctica's
+                                Thwaites Glacier 'Has Got Three Guns Pointed Right At It'</h2></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row my-4">
+                    <div class="container col-sm-6 offset-sm-3 col-lg-12 offset-lg-0">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1561558/saudi-picture.jpg?w=343&h=229&f=c38d1701b1898e7dcc79c2e2dc3aef4a"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">SPONSORED INSIGHT</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    Saudi Arabia Accelerates Ahead</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">With interest from international investors up 70 percent in 2019,
+                                    Saudi Arabia is becoming an investment powerhouse—a transformation supported by its
+                                    flourishing financial services industry and rapidly expanding private sector. Read
+                                    more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container col-sm-6 offset-sm-3 col-lg-12 offset-lg-0">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1502503/british-international-school-washington.jpg?w=343&h=229&f=bf9da5b8130950d94e076871fcf363c8"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">SPONSORED INSIGHT</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    What Can A Private Education Do For Your Child?</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">What is the single most consequential choice you make to give your
+                                    child the best possible advantage in life? If you think it’s education, read on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container col-sm-6 offset-sm-3 col-lg-12 offset-lg-0">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1556481/university-denver-sturm-college-law.jpg?w=343&h=229&f=03c5bc9900a26a2cb6d96e617348a138"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">SPONSORED INSIGHT</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    Have You Thought About A Career In Law? If So, Where Should You Get Qualified?</h2>
+                                </a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">The rewards for a career in the legal profession are many and
+                                    varied, and demand for lawyers is high. So which schools produce the best
+                                    lawyers?</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container col-sm-6 offset-sm-3 col-lg-12 offset-lg-0">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1551987/hubbard-school-journalism-mass-communication.jpg?w=343&h=229&f=b588b3c79d85cc0c8e4829c41c46cd11"
+                                     alt="">
+                                <span class="position-absolute tags bg-white py-1 px-2 text-primary font-weight-bolder">SPONSORED INSIGHT</span>
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    Good Journalists Are More Important Than Ever in 2020</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">The world desperately needs sharp, incisive and capable journalists
+                                    to cut through the noise with measured and nuanced takes on today's pressing issues.
+                                    For these looking to find their voices, an education at a leading journalism school
+                                    is invaluable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row mb-4">
+                    <div class="container col-sm-6 offset-sm-3 col-lg-12 offset-lg-0">
+                        <div class="card">
+                            <a href="#" class="position-relative mb-2">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1550618/americas-most-responsible-companies-2020.jpg?w=343&h=229&f=228a31483952835462a9e24494fc24f7"
+                                     alt="">
+                            </a>
+                            <div class="p-3">
+                                <a href="#" class="text-decoration-none hover-red-underline"><h2 class="font-20 font-weight-bold">
+                                    America's Most Socially Responsible Companies 2020</h2></a>
+                            </div>
+                            <div class="arial-helvetica px-3">
+                                <p class="text-dark">Newsweek partnered with Statista Inc. to spotlight 300 companies
+                                    that stand up as good citizens and good neighbors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="col-12 order-3 roboto-condensed">
+                <div class="row">
+                    <div class="col-12 col-md-3 mt-md-5 mt-lg-5 mt-xl-1">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img class="w-100"
+                                     src="https://d.newsweek.com/en/full/1566954/february-21-28-2020-cover.jpg?w=360&h=480&q=90&f=2854a6a61749f086d0ca2b1af52588dc"
+                                     alt="february issue">
+
+                            </a>
+                            <a href="#"
+                               class="position-absolute text-decoration-none tag-of-the-month px-2 py-1 text-danger bg-light font-weight-bold">FEBRUARY
+                                28 ISSUE</a>
+                        </div>
+                        <div class="text-center d-flex flex-column justify-content-between">
+                            <a href="#" class="bg-gray text-decoration-none font-weight-bold text-dark py-2">SEE ALL
+                                FEATURES ></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="row px-3">
+                            <div class="col-12 text-center d-flex justify-content-center border-bottom">
+                                <span class="n-icon mr-2"></span>
+                                <h5 class="font-weight-bold mt-1">IN THE MAGAZINE</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <article class="col-12 col-md-4">
+                                <img class="w-100 mb-3 in-mag-img"
+                                     src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa"
+                                     alt="">
+                                <span class="py-1 px-2 bg-danger text-white font-weight-bold">COVER</span><span
+                                    class="py-1 px-2 text-danger font-weight-bold">WORLD</span>
+                                <a href="#" class="hover-red-underline"><h5 class="font-weight-bold mt-2">Growth Can Be Green. Here's How</h5></a>
+                            </article>
+                            <article class="col-12 col-md-4">
+                                <img class="w-100 mb-3 in-mag-img"
+                                     src="https://d.newsweek.com/en/full/1566392/new-york-city-manhattanhenge-rising-waiters.jpg?w=466&h=311&q=90&f=97269c51459cb76d9ab8b7e8ed34abd0"
+                                     alt="">
+                                <span class="py-1 px-2 bg-danger text-white font-weight-bold">FEATURES</span><span
+                                    class="py-1 px-2 text-danger font-weight-bold">NEWS</span>
+                                <a href="#" class="hover-red-underline"><h5 class="font-weight-bold mt-2">Five Cities Vulnerable To Rising Seas, Including Miami
+                                    and New York</h5></a>
+                            </article>
+                            <article class="col-12 col-md-4">
+                                <img class="w-100 mb-3 in-mag-img"
+                                     src="https://d.newsweek.com/en/full/1565383/fe-presidential-names-01.jpg?w=466&h=311&l=27&t=28&q=90&f=265656a1fc78855627d5f71412792d3e"
+                                     alt="">
+                                <span class="py-1 px-2 bg-danger text-white font-weight-bold">FEATURES</span><span
+                                    class="py-1 px-2 text-danger font-weight-bold">POLITICS</span>
+                                <a href="#" class="hover-red-underline"><h5 class="font-weight-bold mt-2">Reagan Is Beating Obama in the Race To Name Things
+                                    After Former Presidents</h5></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <article class="col-12 col-md-3 mb-3">
+                        <img class="w-100 mb-3 in-mag-img"
+                             src="https://d.newsweek.com/en/full/1565860/per-passwords-02.jpg?w=466&h=311&q=90&f=ca3c6feae9effd6ddce1402a7d792d7e"
+                             alt="">
+                        <span class="py-1 px-2 bg-danger text-white font-weight-bold">PERISCOPE</span><span
+                            class="py-1 px-2 text-danger font-weight-bold">CULTURE</span>
+                        <a href="#" class="hover-red-underline"><h5 class="font-weight-bold mt-2">7 Tips to Create a Hack-Proof Password You'll Actually
+                            Remember</h5></a>
+                    </article>
+                    <article class="col-12 col-md-3 mb-3">
+                        <img class="w-100 mb-3 in-mag-img"
+                             src="https://d.newsweek.com/en/full/1566195/cul-books-01-578945297-banner.jpg?w=466&h=311&l=53&t=47&q=90&f=d8682f476870a28f6620f166adf5cc92"
+                             alt="">
+                        <span class="py-1 px-2 bg-danger text-white font-weight-bold">DOWNTIME</span><span
+                            class="py-1 px-2 text-danger font-weight-bold">CULTURE</span>
+                        <a href="#" class="hover-red-underline"><h5 class="font-weight-bold mt-2">40 Must-Read Fiction and Nonfiction Books to Savor This
+                            Spring</h5></a>
+                    </article>
+                    <article class="col-12 col-md-3 mb-3">
+                        <img class="w-100 mb-3 in-mag-img"
+                             src="https://d.newsweek.com/en/full/1566318/cul-ps-ivovanhove-banner.jpg?w=466&h=311&q=90&f=40962469f846fcaef4d7d069eff45bda"
+                             alt="">
+                        <span class="py-1 px-2 bg-danger text-white font-weight-bold">DOWNTIME</span><span
+                            class="py-1 px-2 text-danger font-weight-bold">CULTURE</span>
+                        <a href="#" class="hover-red-underline"><h5 class="font-weight-bold mt-2">West Side Story Returns to Broadway Like Never Before</h5></a>
+                    </article>
+                    <article class="col-12 col-md-3 mb-3">
+                        <div class="position-relative">
+                            <img class="w-100 mb-3 in-mag-img"
+                                 src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa"
+                                 alt="">
+                            <span class="py-1 px-2 bg-danger text-white font-weight-bold position-absolute in-mag-tags">IN FOCUS</span>
+                        </div>
+                        <div>
+                            <a href="#" class="hover-red-underline"><h5 class="font-weight-bold mt-2">FIGHTING BACK</h5></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3">
+                <div class="row px-3">
+                    <div class="col-12 text-center d-flex justify-content-center border-bottom mb-4">
+                        <span class="n-icon mr-2"></span>
+                        <h5 class="font-weight-bold mt-1">EDITOR'S PICK</h5>
+                    </div>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1569002/julian-assange.jpg?w=397&h=295&f=0d8f62c7a2a94e99d4d98b76e26ed98d"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">NEWS</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">WikiLeaks Editor Calls Assange Extradition
+                                    Arguments by U.S. 'Hollow Words'</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                "The words that are coming out from the United States about WikiLeaks revelations were
+                                hollow 10 years ago, and they don't increase in legitimacy as years go by," Kristinn
+                                Hrafnsson said.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1569005/nasa-mars-insight-lander.jpg?w=397&h=295&f=8b0273127201b7dab991d8910c02d853"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">TECH
+                                & SCIENCE</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                "We've been planning this mission and executing for the last 10 years—and the initial
+                                results are really exciting," Bruce Banerdt, InSight principal investigator said.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568985/meth.jpg?w=397&h=295&f=f8ec5cd20018d139e6a7da5c12c694dd"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">U.S.</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">CBP Officers Seize 895 Pounds of Meth Worth $18
+                                    Million Hidden in Broccoli</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                U.S. Customs and Border Protection said officers intercepted a tractor-trailer at the
+                                Pharr International Bridge cargo facility in Pharr, Texas.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568920/david-weil.jpg?w=397&h=295&f=052e08a392c097c3be5c9c2b45bbc91a"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">CULTURE</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">'Hunters' Creator Addresses Fictional Holocaust
+                                    Atrocities Amid Criticism</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                In one scene in the opening episode of the Amazon Prime Video series, Jewish prisoners
+                                are forced into a deadly game of human chess.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568829/pete-zachary.jpg?w=397&h=295&f=65c588b39859ca30a061a86f6b2e55cf"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">U.S.</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">9-Year-Old Asks Pete Buttigieg for Help Telling
+                                    'the World I'm Gay, Too'</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                Zachary Ro joined Buttigieg, who has become the first openly gay candidate to run for
+                                president, on stage after his question was read out at the rally in Denver.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568876/donald-trump-rally-hat-reelection.jpg?w=397&h=295&f=7af2e1aef1a21cfc932da4206b93ae9d"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">POLITICS</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">Poll: Nearly Two-Thirds of U.S. Voters Expect Trump
+                                    Will Be Re-Elected</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                The CBS News/YouGov poll revealed that Republicans are far more confident than
+                                Democrats, with 90 percent of GOP registered voters expecting the president to win
+                                re-election.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1563038/kobe-bryant-los-angeles-lakers.jpg?w=397&h=295&f=e639680f35bb5484a27767fef1a036ef"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">SPORTS</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">How to Watch, Live Stream Kobe Bryant Memorial
+                                    Service on Monday</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                The memorial service for the five-time NBA champion will begin at 1 p.m. ET at the
+                                Staples Center in Los Angeles.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1568796/bernie-sanders-democratic-party-clinton.jpg?w=397&h=295&f=4485c291135ff0f5cde0e209eef79164"
+                                 alt="">
+                            <a href="#"
+                               class="position-absolute editors-pick-tags bg-white py-1 px-2 text-danger font-weight-bolder">POLITICS</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">Bernie Sanders Blasted for Saying Neither Dems, GOP
+                                    Can Stop His Campaign</h2>
+                            </a>
+                        </div>
+                        <div class="arial-helvetica">
+                            <p class="text-dark">
+                                Vermont Senator Bernie Sanders was accused of "egomania" and accepting Russian
+                                assistance Saturday, after he remarked that neither the Democratic Party nor the
+                                Republican Party can stop his 2020 presidential campaign.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3 mb-5 border-bottom">
+                <div class="row px-3">
+                    <div class="col-12 text-center d-flex justify-content-center border-bottom mb-4">
+                        <span class="n-icon mr-2"></span>
+                        <h5 class="font-weight-bold mt-1">FEATURED SLIDESHOWS</h5>
+                    </div>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
+                                 alt="">
+                            <a href="#"
+                               class="slide-shows text-center position-absolute editors-pick-tags bg-white py-2 px-2 text-danger font-weight-bolder">7</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
+                                 alt="">
+                            <a href="#"
+                               class="slide-shows text-center position-absolute editors-pick-tags bg-white py-2 px-2 text-danger font-weight-bolder">7</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.jpg?w=397&h=265&f=fb4270bf5fbc2591cc43d24d0377621d"
+                                 alt="">
+                            <a href="#"
+                               class="slide-shows text-center position-absolute editors-pick-tags bg-white py-2 px-2 text-danger font-weight-bolder">7</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1521879/muir-pass-great-alone.jpg?w=397&h=265&f=f340356025a2be1523d3102736a02f42"
+                                 alt="">
+                            <a href="#"
+                               class="slide-shows text-center position-absolute editors-pick-tags bg-white py-2 px-2 text-danger font-weight-bolder">7</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1521628/galapagos-cerro-brujo.jpg?w=397&h=265&f=238784ea0ecb17e5186615dc6c87822e"
+                                 alt="">
+                            <a href="#"
+                               class="slide-shows text-center position-absolute editors-pick-tags bg-white py-2 px-2 text-danger font-weight-bolder">7</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1521293/still-2-eop.jpg?w=397&h=265&f=c18000449d44d36619eba01997038aec"
+                                 alt="">
+                            <a href="#"
+                               class="slide-shows text-center position-absolute editors-pick-tags bg-white py-2 px-2 text-danger font-weight-bolder">7</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3 mb-5 border-bottom">
+                <div class="row">
+                    <div class="col-12"><h5 class="font-weight-bold mt-1 red-text">U.S.</h5></div>
+                </div>
+                <div class="row px-3">
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <div class="subs col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4 pb-sm-5">
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570280/candace-owens.jpg?w=95&h=95&f=151b54bfb27c97ba266951189a3a3769"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1568769/donald-trump-jr-alaska-hunting-grizzly-bears.jpg?w=95&h=95&f=49d738cf2271f86aa0a7a8b9d662a519"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Donald Trump Jr. Says
+                                    Democrats Hope Coronavirus Will Kill Americans</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-1 more-stories-item">
+                            <div class="float-left mr-3 mb-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570239/biden.jpg?w=95&h=95&f=d73d4cbb28ec5c7837b938831b33ccf8"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3 mb-5 border-bottom">
+                <div class="row">
+                    <div class="col-12"><h5 class="font-weight-bold mt-1 red-text">World</h5></div>
+                </div>
+                <div class="row px-3">
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <div class="subs col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570280/candace-owens.jpg?w=95&h=95&f=151b54bfb27c97ba266951189a3a3769"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1568769/donald-trump-jr-alaska-hunting-grizzly-bears.jpg?w=95&h=95&f=49d738cf2271f86aa0a7a8b9d662a519"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Donald Trump Jr. Says
+                                    Democrats Hope Coronavirus Will Kill Americans</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-1 more-stories-item">
+                            <div class="float-left mr-3 mb-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570239/biden.jpg?w=95&h=95&f=d73d4cbb28ec5c7837b938831b33ccf8"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3 mb-5 border-bottom">
+                <div class="row">
+                    <div class="col-12"><h5 class="font-weight-bold mt-1 red-text">Tech & Science</h5></div>
+                </div>
+                <div class="row px-3">
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <div class="subs col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570280/candace-owens.jpg?w=95&h=95&f=151b54bfb27c97ba266951189a3a3769"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1568769/donald-trump-jr-alaska-hunting-grizzly-bears.jpg?w=95&h=95&f=49d738cf2271f86aa0a7a8b9d662a519"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Donald Trump Jr. Says
+                                    Democrats Hope Coronavirus Will Kill Americans</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-1 more-stories-item">
+                            <div class="float-left mr-3 mb-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570239/biden.jpg?w=95&h=95&f=d73d4cbb28ec5c7837b938831b33ccf8"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3 mb-5 border-bottom">
+                <div class="row">
+                    <div class="col-12"><h5 class="font-weight-bold mt-1 red-text">Culture</h5></div>
+                </div>
+                <div class="row px-3">
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <div class="subs col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570280/candace-owens.jpg?w=95&h=95&f=151b54bfb27c97ba266951189a3a3769"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1568769/donald-trump-jr-alaska-hunting-grizzly-bears.jpg?w=95&h=95&f=49d738cf2271f86aa0a7a8b9d662a519"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Donald Trump Jr. Says
+                                    Democrats Hope Coronavirus Will Kill Americans</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-1 more-stories-item">
+                            <div class="float-left mr-3 mb-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570239/biden.jpg?w=95&h=95&f=d73d4cbb28ec5c7837b938831b33ccf8"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3 mb-5 border-bottom">
+                <div class="row">
+                    <div class="col-12"><h5 class="font-weight-bold mt-1 red-text">Sports</h5></div>
+                </div>
+                <div class="row px-3">
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <div class="position-relative mb-2">
+                            <img class="w-100"
+                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
+                                 alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none hover-red-underline">
+                                <h2 class="font-20 font-weight-bold">NASA's InSight Lander Confirms That Mars Is
+                                    Seismically Active</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <div class="subs col-12 col-md-4 pl-0 pr-0 pr-md-4 mb-4">
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570280/candace-owens.jpg?w=95&h=95&f=151b54bfb27c97ba266951189a3a3769"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-sm-4 mb-md-3 more-stories-item border-bottom">
+                            <div class="float-left mr-3 mb-sm-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1568769/donald-trump-jr-alaska-hunting-grizzly-bears.jpg?w=95&h=95&f=49d738cf2271f86aa0a7a8b9d662a519"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Donald Trump Jr. Says
+                                    Democrats Hope Coronavirus Will Kill Americans</h2></a>
+                            </div>
+                        </article>
+                        <article class="col-12 p-0 mb-1 more-stories-item">
+                            <div class="float-left mr-3 mb-4">
+                                <img class=""
+                                     src="https://d.newsweek.com/en/full/1570239/biden.jpg?w=95&h=95&f=d73d4cbb28ec5c7837b938831b33ccf8"
+                                     alt="">
+                            </div>
+                            <div class="">
+                                <a href="#" class="text-decoration-none hover-red-text"><h2
+                                        class="font-17 roboto-condensed font-weight-bold">Biden Says 'Eight Years of
+                                    Trump' Will Change the 'Nature of Who We Are'</h2></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="roboto-condensed col-12 order-3 mb-2 border-bottom">
+                <div class="row pl-0">
+                    <article class="col-12 col-md-12 col-lg-8 pr-md-4 mb-4">
+                        <div class="col-12 pl-0"><h5 class="font-weight-bold mt-1 red-text small">SUBSCRIBE</h5></div>
+                        <div id="subscribe" class="row bg-light mx-1 px-3 py-4">
+                            <div class="position-relative col-12 col-md-5 col-lg-6 col-xl-4 mb-5 text-center text-md-left">
+                                <img src="https://d.newsweek.com/en/full/1566954/february-21-28-2020-cover.jpg?w=170&q=95&f=4266076976cfcb9a853392f06c8a02c1"
+                                     alt="february-cover">
+                                <img id="subscribe-cover" class="position-absolute"
+                                     src="https://d.newsweek.com/en/full/1569344/march-06-2020-cover.jpg?w=170&q=95&f=55944e2b38c7b505782d06582edd44fd"
+                                     alt="february-cover">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-6 col-xl-8 d-flex flex-column align-items-center align-items-md-start">
+                                <p class="font-weight-bold text-center text-md-left">In-depth Stories You Don't See
+                                    Elsewhere About Topics You Want to Read!</p>
+                                <p class="text-center text-md-left">All Access + Weekly Delivery. Choose A Membership
+                                    That's Perfect for You!</p>
+                                <a href="#" class="px-2 py-2 text-white bg-red font-weight-bold text-decoration-none">SUBSCRIBE ></a>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="subs col-12 col-md-12 col-lg-4 pr-md-4 mb-4">
+                        <div class="col-12 pl-0"><h5 class="font-weight-bold mt-1 red-text small">NEWSLETTER</h5></div>
+                        <div id="newsletter" class="row">
+                            <div class="card col-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 col-lg-6"></div>
+                                    <div class="col-12 col-md-9 col-lg-6 pl-md-4 mt-4 mt-lg-5 text-center text-md-left">
+                                        <p class="font-weight-bold text-center text-md-left">The Starting 5</p>
+                                        <p class="text-center text-md-left mb-4">Take back your inbox.
+                                            Sign up for our newsletter and start making sense of the world around
+                                            you.</p>
+                                        <a href="#" class="px-2 py-2 text-white bg-red font-weight-bold text-lg-left text-decoration-none">SIGN
+                                            UP ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="container-fluid bg-white min-height p-4">
+        <div class="row">
+            <div id="footer-logo-container" class="col-12 col-md-7 d-flex flex-sm-column flex-md-row align-items-sm-start align-items-md-end">
+                <a id="footer-logo-link" href="https://www.newsweek.com" class="mr-3">
+                    <svg version="1.1" id="footer-logo" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                         style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+<path class="st0"
+      d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+</g></svg>
+                </a>
+                <p id="copyright" class="text-dark small m-0">© 2020 Newsweek</p>
+            </div>
+            <div id="social-icons" class="col-12 col-md-5 p-0 pl-sm-3 d-flex flex-row justify-content-start justify-content-md-end align-items-end">
+                <a href="#" class="footer-links"><i class="fab fa-facebook-square fa-lg mr-2"></i></a>
+                <a href="#" class="footer-links"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+                <a href="#" class="footer-links"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+                <a href="#" class="footer-links"><i class="fab fa-tumblr fa-lg mr-2"></i></a>
+                <a href="#" class="footer-links"><i class="fab fa-linkedin fa-lg mr-2"></i></a>
+            </div>
+            <div class="col-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 col-sm-1">
+                <b class="small font-weight-bold">Editions:</b>
+            </div>
+            <div class="col-9">
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">U.S. Edition</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">日本</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Pakistan</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Polska</a>
+                <a href="#" class="small text-decoration-none footer-links">Romanian</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">About Us</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Correction</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Contact Us</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Editorial Guidelines</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Advertise</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Copyright</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Terms & Conditions</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Privacy Policy</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Cookie Policy</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Terms of Sale</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Archive</a>
+                <a href="#" class="small text-decoration-none footer-links border-right pr-3 mr-2">Announcement</a>
+                <a href="#" class="small text-decoration-none footer-links">Consent & Preferences</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/b53238e3c8.js" crossorigin="anonymous"></script>
+</body>
+</html>
