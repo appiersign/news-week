@@ -1,5 +1,5 @@
 # The News Week Clone
-![Preview](./assets/images/newsweek.png)
+![Preview](assets/images/nwfinal.png)
 
 > The purpose of this project is to learn about media queries and responsive design with bootstrap.  
 > The News Week website is quiet a complex one with, varying layouts, which makes it quiet challenging and educative as well. I really enjoyed working on this project.
